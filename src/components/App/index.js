@@ -1,10 +1,13 @@
 import React from 'react';
+import AppStyled from './AppStyled';
 
 function App() {
   return (
-    <div className="Test">
-        <p>Coucou je teste</p>
-    </div>
+    <AppStyled>
+      <div className="test">
+          <p>Coucou je teste</p>
+      </div>
+    </AppStyled>
   );
 }
 
