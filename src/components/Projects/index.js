@@ -40,7 +40,7 @@ class Projects extends React.Component {
                     
                 </div>
             </div>
-            {/*
+
             <div class="hero-projects projects">
                 <div class="hero">
                     <div class="photo-left"></div>
@@ -49,14 +49,14 @@ class Projects extends React.Component {
                 {projectsData.map((project) => (
                   <a href="#">
                     <img
-                        class="project-ico"
+                        class={project.iconClass}
                         src={project.iconImage}
                         alt={project.projectName}
                     />
                   </a>
                   ))}
             </div>
-            */}
+
         </section>
       </ProjectsStyled>
     );

@@ -108,8 +108,10 @@ const HomeStyled = styled.div`
         }
 */
     }
-
+/*
     @media screen and (min-width: 1025px){
+        */
+    @media screen and (min-width: 1425px){
 
         .details {
             grid-column: 2/3;

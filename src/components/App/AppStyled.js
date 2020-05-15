@@ -97,7 +97,10 @@ const AppStyled = styled.div`
         }
     }
 
+    /*
     @media screen and (min-width: 1025px){
+        */
+    @media screen and (min-width: 1425px){
 
         .standard-page, .page-projects {
             grid-template-columns: 5% 1fr 1fr 1fr 5%;
@@ -114,6 +117,8 @@ const AppStyled = styled.div`
         }
     
     }
+
+    
 `
 
 export default AppStyled;

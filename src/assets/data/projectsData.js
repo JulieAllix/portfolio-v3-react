@@ -27,6 +27,7 @@ export default [
     {
         id: 1,
         projectClass: 'studyCards',
+        iconClass: 'project-ico',
         slug: 'study-cards',
         highlightedProject: 'studyCardsIsHighlighted',
         projectName: 'Study Cards',
@@ -46,6 +47,7 @@ export default [
     {
         id: 2,
         projectClass: 'breakFree',
+        iconClass: 'project-ico',
         slug: 'break-free',
         highlightedProject: 'breakFreeIsHighlighted',
         projectName: 'Break Free',
@@ -65,6 +67,7 @@ export default [
     {
         id: 3,
         projectClass: 'grocereaz',
+        iconClass: 'project-ico',
         slug: 'grocereaz',
         highlightedProject: 'grocereazIsHighlighted',
         projectName: 'Grocer\'eaz',
@@ -84,6 +87,7 @@ export default [
     {
         id: 4,
         projectClass: 'portfoliov2',
+        iconClass: 'project-ico',
         slug: 'portfoliov2',
         highlightedProject: 'portfoliov2IsHighlighted',
         projectName: 'Portfolio - v2',
@@ -103,6 +107,7 @@ export default [
     {
         id: 5,
         projectClass: 'portfoliov3',
+        iconClass: 'project-ico-lg',
         slug: 'portfoliov3',
         highlightedProject: 'portfoliov3IsHighlighted',
         projectName: 'Portfolio - v3',
