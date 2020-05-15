@@ -1,14 +1,28 @@
 const theme = {
 
     /* Fonts */
+
     titleFont: 'Abril Fatface',
     contentFont: 'Poppins',
 
     /* Colors */
 
+    fontColor: 'white',
+
     /* Sizes */
-    bigTitleSize: '4.5rem',
-    titleSize: '3rem',
+
+    bigTitleSizeMobileHorizontal: '2.2rem',
+    bigTitleSizeMobile: '3rem',
+    bigTitleSizeTablet: '4rem',
+    bigTitleSize: '5.5rem',
+    /*bigTitleSize: '4.5rem',*/
+
+    titleSizeMobileHorizontal: '1.4rem',
+    titleSizeMobile: '1.7rem',
+    titleSizeTablet: '2.5rem',
+    titleSize: '4rem',
+    /*titleSize: '3rem',*/
+
     contentSize: '1.1rem',
 };
 
