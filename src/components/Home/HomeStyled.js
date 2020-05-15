@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 const HomeStyled = styled.div`
+
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     background-image: radial-gradient(#4B4B4B, #0B1023);
@@ -24,7 +25,6 @@ const HomeStyled = styled.div`
         grid-column: 2/3;
         height: 20vh;
         height: calc(var(--vh, 1vh) * 20);
-        border: 2px solid red;
         align-self: center;
         display: flex;
         flex-direction: column;
@@ -53,7 +53,7 @@ const HomeStyled = styled.div`
         flex-direction: row;
         align-items:center;
         justify-content: center;
-        border: 3px solid blue;
+        overflow: hidden;
     }
 
     .hero img {
@@ -91,17 +91,67 @@ const HomeStyled = styled.div`
         .hero {
             height: 200px;
         }
+
         .hero img {
             height: 200px;
         }
 
     }
 
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 760px) and (min-height: 550px){
 
+        .details h1 {
+            font-size: ${theme.bigTitleSizeTablet};
+        }
 
+        .details h2 {
+            font-size: ${theme.titleSizeTablet};
+        }
+        
+        .hero {
+            height: 450px;
+        }
+
+        .hero img {
+            height: 450px;
+        }
 
     }
+
+    @media screen and (min-width: 1025px){
+
+        .standard-page {
+            grid-template-columns: 5% 1fr 1fr 1fr 5%;
+        }
+
+        .details {
+            grid-column: 2/3;
+            align-self: end;
+            margin-bottom: 7rem;
+        }
+
+        .details h1 {
+            font-size: ${theme.bigTitleSize};
+        }
+
+        .details h2 {
+            font-size: ${theme.titleSize};
+            padding-top: 1rem;
+        }
+
+        .hero {
+            height: 390px;
+            align-self: center;
+            grid-column: 3/4;
+        }
+
+        .hero img {
+            height: 390px;
+        }
+
+    }
+
+
 
 /*
 
