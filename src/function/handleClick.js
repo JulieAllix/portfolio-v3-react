@@ -1,4 +1,4 @@
-/*
+
 function handleClick() {
     console.log('A cliqué');
     const slides = document.querySelectorAll('.slide');
@@ -26,7 +26,7 @@ function handleClick() {
         });
         name.classList.add("active");
     }
-/*
+
     function nextSlide(pageNumber){
         const nextPage = pages[pageNumber];
         const currentPage = pages[current];
@@ -35,5 +35,5 @@ function handleClick() {
     }
     */
 }
-/*
+
 export default handleClick;

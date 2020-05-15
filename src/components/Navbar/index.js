@@ -4,7 +4,7 @@ import $ from 'jquery';
 import NavbarStyled from './NavbarStyled';
 
 //import handleClick from 'function/handleClick';
-import changeDots from 'function/changeDots';
+import { changeDots, bold } from 'function/changeDots';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -59,22 +59,21 @@ class Navbar extends React.Component {
     const pages = document.querySelectorAll('.page-name');
 
     slides.forEach((slide, index) => {
-
       $('.slide').on('click', (event) => {
         const dot = event.currentTarget;
         changeDots(slides, dot);
-        
         /*
-        bold(dot);
         nextSlide(index);
         */
       });
     });
-    /*
+
     pages.forEach((page, index) => {
-      $('.page-name').on('click', handleClick);
+      $('.page-name').on('click', (event) => {
+        const page = event.currentTarget;
+        bold(pages, page);
+      });
     });
-    */
 
     //document.addEventListener('wheel', handleClick);
   }
