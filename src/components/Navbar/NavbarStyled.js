@@ -43,8 +43,20 @@ const NavbarStyled = styled.div`
         animation: dot 0.5s ease-in-out infinite alternate;
     }
 
+    @keyframes dot {
+        0% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(2.5);
+        }
+    }
     .pages svg.active {
         opacity: 1;
+    }
+    .pages h4.active {
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     @media screen and (max-height: 415px){
@@ -57,6 +69,11 @@ const NavbarStyled = styled.div`
         
         .pages h4 {
             font-size: 24px;
+        }
+
+        .pages h4.active {
+            font-weight: 100;
+            text-decoration: none;
         }
 
     }
