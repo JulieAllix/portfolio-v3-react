@@ -14,11 +14,12 @@ class Projects extends React.Component {
             <div class="details-txt detail">
                 <h1>My personal projects</h1>
                 <div class="details-projects">
-                    <p class="p-skills">Hover the below skills to highlight the projects on which I’ve put them into practice :</p>
+                    <div class="p-skills"><p>Hover the below skills to highlight the projects on which I’ve put them into practice :</p></div>
                     <p class="p-skills-tactile">Some of the skills I've put into practice in my personal projects</p>
+                    
                     <ul class="skills">
                       {skillsData.map((skill) => (
-                        <li class="skill" key={skill.id}>
+                        <li class={skill.liClass} key={skill.id}>
                             <img
                                 class={skill.class}
                                 src={skill.logo}
@@ -36,8 +37,10 @@ class Projects extends React.Component {
                         </li>
                       ))}
                     </ul>
+                    
                 </div>
             </div>
+            {/*
             <div class="hero-projects projects">
                 <div class="hero">
                     <div class="photo-left"></div>
@@ -53,6 +56,7 @@ class Projects extends React.Component {
                   </a>
                   ))}
             </div>
+            */}
         </section>
       </ProjectsStyled>
     );

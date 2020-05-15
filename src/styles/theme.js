@@ -23,7 +23,9 @@ const theme = {
     titleSize: '2.5rem',
     /*titleSize: '3rem',*/
 
-    contentSize: '1.1rem',
+    contentSizeMobile: '.8rem',
+    contentSizeTablet: '1.1rem',
+    contentSize: '.8rem',
 };
 
 export default theme;

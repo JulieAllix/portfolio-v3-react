@@ -39,7 +39,9 @@ class App extends React.Component {
     return (
       <AppStyled>
         <div className="portfolio">
+        {/*
           <Home />
+          */}
           <Projects />
           <Navbar />
         </div>

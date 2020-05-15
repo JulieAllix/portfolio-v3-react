@@ -69,17 +69,15 @@ const NavbarStyled = styled.div`
         .pages h4 {
             font-size: 24px;
         }
+/*
 
-        .pages h4.active {
-            font-weight: 100;
-            text-decoration: none;
-        }
-
+*/
     }
 
     @media screen and (min-width: 1025px){
 
         .pages {
+            flex-direction: column;
             right: 5%;
             top: 50%;
             transform: translateY(-50%);
@@ -91,14 +89,15 @@ const NavbarStyled = styled.div`
             flex-direction: row;
         }
 
-        .pages {
-            flex-direction: column;
-        }
-
         .pages h4 {
             padding: 30px;
             justify-self: flex-end;
             cursor: auto;
+        }
+
+        .pages h4.active {
+            font-weight: 100;
+            text-decoration: none;
         }
 
         .slide {

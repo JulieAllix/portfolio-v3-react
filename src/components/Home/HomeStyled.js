@@ -6,13 +6,6 @@ const HomeStyled = styled.div`
     background-image: radial-gradient(#4B4B4B, #0B1023);
     background-size: cover;
 
-    .standard-page {
-        height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
-        display: grid;
-        grid-template-columns: 5% 1fr 5%;
-    }
-
     .details {
         grid-column: 2/3;
         height: 20vh;
@@ -37,7 +30,7 @@ const HomeStyled = styled.div`
         font-size: ${theme.titleSizeMobile};
         margin: .5rem;
     }
-
+/*
     .hero {
         height: 290px;
         grid-column: 2/3;
@@ -63,6 +56,7 @@ const HomeStyled = styled.div`
         transform: translate(0%, 5%);
     }
 
+
     .hero:hover .photo-right {
         transform: translate(0%, 0%);
     }
@@ -70,7 +64,7 @@ const HomeStyled = styled.div`
     .hero:hover .photo-left {
         transform: translate(0%, 0%);
     }
-
+*/
     @media screen and (max-height: 415px){
 
         .details {
@@ -84,7 +78,7 @@ const HomeStyled = styled.div`
         .details h2 {
             font-size: ${theme.titleSizeMobileHorizontal};
         }
-        
+        /*
         .hero {
             height: 180px;
         }
@@ -92,7 +86,7 @@ const HomeStyled = styled.div`
         .hero img {
             height: 180px;
         }
-
+*/
     }
 
     @media screen and (min-width: 760px) and (min-height: 550px){
@@ -104,7 +98,7 @@ const HomeStyled = styled.div`
         .details h2 {
             font-size: ${theme.titleSizeTablet};
         }
-        
+        /*
         .hero {
             height: 450px;
         }
@@ -112,14 +106,10 @@ const HomeStyled = styled.div`
         .hero img {
             height: 450px;
         }
-
+*/
     }
 
     @media screen and (min-width: 1025px){
-
-        .standard-page {
-            grid-template-columns: 5% 1fr 1fr 1fr 5%;
-        }
 
         .details {
             grid-column: 2/3;
@@ -137,6 +127,7 @@ const HomeStyled = styled.div`
             padding-top: 1rem;
         }
 
+/*
         .hero {
             height: 390px;
             align-self: center;
@@ -146,7 +137,7 @@ const HomeStyled = styled.div`
         .hero img {
             height: 390px;
         }
-
+*/
     }
 
 

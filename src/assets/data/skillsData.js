@@ -15,6 +15,7 @@ export default [
         project: 'grocereaz',
         logo: react,
         class:'logo-skill',
+        liClass: 'skill',
     },
     {
         id: 2,
@@ -23,6 +24,7 @@ export default [
         project: 'breakFree',
         logo: js,
         class:'logo-skill',
+        liClass: 'skill',
     },
     {
         id: 3,
@@ -31,6 +33,7 @@ export default [
         project: 'studyCards',
         logo: html,
         class:'logo-skill',
+        liClass: 'skill',
     },
     {
         id: 4,
@@ -39,6 +42,7 @@ export default [
         project: 'studyCards',
         logo: sass,
         class:'logo-skill',
+        liClass: 'skill',
     },
     {
         id: 5,
@@ -47,6 +51,7 @@ export default [
         project: 'grocereaz',
         logo: axios,
         class:'logo-skill-lg',
+        liClass: 'skill skill-lg',
     },
     {
         id: 6,
@@ -55,6 +60,7 @@ export default [
         project: 'grocereaz',
         logo: redux,
         class:'logo-skill',
+        liClass: 'skill',
     },
     {
         id: 7,
@@ -63,6 +69,7 @@ export default [
         project: 'breakFree',
         logo: sql,
         class:'logo-skill',
+        liClass: 'skill',
     },
     {
         id: 8,
@@ -71,6 +78,7 @@ export default [
         project: 'grocereaz',
         logo: git,
         class:'logo-skill',
+        liClass: 'skill',
     },
     
   ];
