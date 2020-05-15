@@ -10,49 +10,49 @@ class Projects extends React.Component {
   render() {
     return (
       <ProjectsStyled>
-        <section class="page-projects page">
-            <div class="details-txt detail">
+        <section className="page-projects page">
+            <div className="details-txt detail">
                 <h1>My personal projects</h1>
-                <div class="details-projects">
-                    <div class="p-skills"><p>Hover the below skills to highlight the projects on which I’ve put them into practice :</p></div>
-                    <p class="p-skills-tactile">Some of the skills I've put into practice in my personal projects</p>
+                <div className="details-projects">
+                    <div className="p-skills"><p>Hover the below skills to highlight the projects on which I’ve put them into practice :</p></div>
+                    <p className="p-skills-tactile">Some of the skills I've put into practice in my personal projects</p>
                     
-                    <ul class="skills">
+                    <ul className="skills">
                       {skillsData.map((skill) => (
-                        <li class={skill.liClass} key={skill.id}>
+                        <li className={skill.liClass} key={skill.id}>
                             <img
-                                class={skill.class}
+                                className={skill.class}
                                 src={skill.logo}
                                 alt={skill.skill}
                             />
-                            <span class="skill-name">{skill.skill}</span>
+                            <span className="skill-name">{skill.skill}</span>
                         </li>
                       ))}
                     </ul>
-                    <p class="p-skills">And also :</p>
-                    <ul class="skills">
+                    <p className="p-skills">And also :</p>
+                    <ul className="skills">
                       {skillsDataWithoutLogo.map((skill) => (
-                        <li class="skill" key={skill.id}>
-                            <span class="skill-name">{skill.skill}</span>
+                        <li className="skill" key={skill.id}>
+                            <span className="skill-name">{skill.skill}</span>
                         </li>
                       ))}
                     </ul>
                     
                 </div>
-                <p class="p-click animate__animated animate__headShake">Click on the pictures to see the projects !</p>
+                <p className="p-click animate__animated animate__headShake">Click on the pictures to see the projects !</p>
             </div>
             
-            <div class="hero-projects projects">
-                <div class="hero">
+            <div className="hero-projects projects">
+                <div className="hero">
                 
-                    <div class="photo-left"></div>
-                    <div class="photo-right"></div>
+                    <div className="photo-left"></div>
+                    <div className="photo-right"></div>
                 </div>
                 
                 {projectsData.map((project) => (
-                  <a href="#">
+                  <a href="#" key={project.id}>
                     <img
-                        class={project.iconClass}
+                        className={project.iconClass}
                         src={project.iconImage}
                         alt={project.projectName}
                     />

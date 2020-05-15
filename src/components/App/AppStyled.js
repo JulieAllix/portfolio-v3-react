@@ -23,6 +23,15 @@ const AppStyled = styled.div`
         grid-template-columns: 5% 1fr 5%;
     }
 
+    .page-projects, .training, .contact {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+    }
+
     .hero {
         height: 290px;
         grid-column: 2/3;
