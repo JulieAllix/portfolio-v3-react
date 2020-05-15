@@ -3,16 +3,8 @@ import theme from '../../styles/theme';
 
 const HomeStyled = styled.div`
 
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     background-image: radial-gradient(#4B4B4B, #0B1023);
     background-size: cover;
-    color: ${theme.fontColor};
-
-    .portfolio {
-        height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
-    }
 
     .standard-page {
         height: 100vh;

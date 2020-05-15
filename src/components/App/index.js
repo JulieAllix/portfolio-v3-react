@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import Home from '../Home';
+import Projects from '../Projects';
 import Navbar from '../Navbar';
 
 import AppStyled from './AppStyled';
@@ -37,8 +38,11 @@ class App extends React.Component {
   render() {
     return (
       <AppStyled>
-        <Home />
-        <Navbar />
+        <div className="portfolio">
+          <Home />
+          <Projects />
+          <Navbar />
+        </div>
       </AppStyled>
     );
   }

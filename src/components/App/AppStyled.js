@@ -6,6 +6,14 @@ const AppStyled = styled.div`
     font-weight: 100;
     font-family: ${theme.contentFont};
     color: ${theme.fontColor};
+    
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+
+    .portfolio {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+    }
 `
 
 export default AppStyled;
