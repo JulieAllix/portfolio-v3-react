@@ -4,7 +4,7 @@ import $ from 'jquery';
 import NavbarStyled from './NavbarStyled';
 
 //import handleClick from 'function/handleClick';
-import { changeDots, bold } from 'function/changeDots';
+import { changeDots, bold, nextSlide } from 'function/changeDots';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -18,7 +18,6 @@ class Navbar extends React.Component {
       contact: false,
     };
     */
-    this.test = this.test.bind(this);
   }
 /*
   highlight(element, bool) {
@@ -49,19 +48,21 @@ class Navbar extends React.Component {
   }
   */
 
-  test() {
-    console.log('I click !');
-  }
-
   componentDidMount() {
-    console.log('component navbar DidMount');
     const slides = document.querySelectorAll('.slide');
-    const pages = document.querySelectorAll('.page-name');
+    const pageNames = document.querySelectorAll('.page-name');
+    const pages = document.querySelectorAll('.page');
+
+    // Tracker
+    let current = 0;
+    let scrollSlide = 0;
 
     slides.forEach((slide, index) => {
       $('.slide').on('click', (event) => {
         const dot = event.currentTarget;
         changeDots(slides, dot);
+        nextSlide(pages, current, index);
+        scrollSlide = index;
         /*
         nextSlide(index);
         */
@@ -71,7 +72,9 @@ class Navbar extends React.Component {
     pages.forEach((page, index) => {
       $('.page-name').on('click', (event) => {
         const page = event.currentTarget;
-        bold(pages, page);
+        bold(pageNames, page);
+        nextSlide(pages, current, index);
+        scrollSlide = index;
       });
     });
 
