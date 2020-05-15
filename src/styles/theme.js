@@ -26,6 +26,8 @@ const theme = {
     contentSizeMobile: '.8rem',
     contentSizeTablet: '1.1rem',
     contentSize: '.8rem',
+
+    
 };
 
 export default theme;

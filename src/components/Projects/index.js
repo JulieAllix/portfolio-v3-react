@@ -39,13 +39,16 @@ class Projects extends React.Component {
                     </ul>
                     
                 </div>
+                <p class="p-click animate__animated animate__headShake">Click on the pictures to see the projects !</p>
             </div>
-
+            
             <div class="hero-projects projects">
                 <div class="hero">
+                
                     <div class="photo-left"></div>
                     <div class="photo-right"></div>
                 </div>
+                
                 {projectsData.map((project) => (
                   <a href="#">
                     <img
