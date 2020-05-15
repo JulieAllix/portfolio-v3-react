@@ -37,6 +37,7 @@ const HomeStyled = styled.div`
         font-weight: 100;
         text-align: center;
         font-size: ${theme.bigTitleSizeMobile};
+        margin-top: 1rem;
     }
 
     .details h2 {
@@ -80,6 +81,10 @@ const HomeStyled = styled.div`
 
     @media screen and (max-height: 415px){
 
+        .details {
+            margin-top: 1rem;
+        }
+
         .details h1 {
             font-size: ${theme.bigTitleSizeMobileHorizontal};
         }
@@ -89,11 +94,11 @@ const HomeStyled = styled.div`
         }
         
         .hero {
-            height: 200px;
+            height: 180px;
         }
 
         .hero img {
-            height: 200px;
+            height: 180px;
         }
 
     }
@@ -132,6 +137,7 @@ const HomeStyled = styled.div`
 
         .details h1 {
             font-size: ${theme.bigTitleSize};
+            margin-top: 0;
         }
 
         .details h2 {

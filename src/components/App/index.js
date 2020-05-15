@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
+
 import Home from '../Home';
+import Navbar from '../Navbar';
+
 import AppStyled from './AppStyled';
+
 import { render } from '@testing-library/react';
 
 import handleRoll from 'function/handleRoll';
@@ -34,6 +38,7 @@ class App extends React.Component {
     return (
       <AppStyled>
         <Home />
+        <Navbar />
       </AppStyled>
     );
   }
