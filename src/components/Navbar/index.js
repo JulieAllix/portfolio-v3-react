@@ -61,7 +61,7 @@ class Navbar extends React.Component {
       slide.addEventListener('click', function(event) {
         const dot = event.currentTarget;
         changeDots(slides, dot);
-        nextSlide(pages, current, index);
+        current = nextSlide(pages, current, index);
     });
     /*
         scrollSlide = index;
@@ -73,7 +73,7 @@ class Navbar extends React.Component {
         console.log('page cliquée !')
         const page = event.currentTarget;
         bold(pageNames, page);
-        nextSlide(pages, current, index);
+        current = nextSlide(pages, current, index);
       });
     });
 

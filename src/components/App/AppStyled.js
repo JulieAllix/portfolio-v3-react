@@ -19,21 +19,13 @@ const AppStyled = styled.div`
         grid-template-columns: 5% 1fr 5%;
     }
 
-/* A remettre après
     .page-projects, .training, .contact {
         display: none;
         width: 100%;
         opacity: 0;
         pointer-events: none;
     }
-    A virer après :
-*/
-.home, .page-projects, .contact {
-        display: none;
-        width: 100%;
-        opacity: 0;
-        pointer-events: none;
-    }
+
 /*
     .page-projects, .training, .contact {
         position: absolute;

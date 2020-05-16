@@ -35,6 +35,9 @@ export const nextSlide = (pages, current, pageNumber) => {
     const nextProjects = nextPage.querySelector('.projects');
     const portfolio = document.querySelector('.portfolio');
 
+    console.log(nextLeft);
+    
+
     const tl = gsap.timeline();
 
     if (currentProjects == null && nextProjects != null){
@@ -44,8 +47,10 @@ export const nextSlide = (pages, current, pageNumber) => {
         .to(portfolio, 0.3, { backgroundImage: backgrounds[pageNumber] }) // update bg
         .fromTo(currentPage, 0.2, {opacity: 1, pointerEvents: 'all'}, {opacity: 0, pointerEvents: 'none'}) // current page disappears
         .fromTo(currentPage, 0.1, {display: 'grid'}, {display: 'none'}) // current page's display changes
-        .fromTo(nextPage, 0.2, {display: 'none'}, {display: 'grid'}) // next page's display changes
-        .fromTo(nextPage, 0.2, {opacity: 0, pointerEvents: 'none'}, {opacity: 1, pointerEvents: 'all'}, "-=0.2") // next page appears
+        .fromTo(nextPage, 0.1, {display: 'none'}, {display: 'grid'}) // next page's display changes
+        .fromTo(nextPage, 0.2, {opacity: 0, pointerEvents: 'none'}, {opacity: 1, pointerEvents: 'all'}, "-=0.1") // next page appears
+        .fromTo(nextLeft, 0.2, {y: '-100%'}, {y: '-5%'}, '-=0.1') // currentLeft appears
+        .fromTo(nextRight, 0.2, {y: '-100%'}, {y: '5%'}, '-=0.1')
         .fromTo(nextText, 0.3, {opacity: 0, y: -30}, {opacity: 1, y: 0}, '-=0.2') //next text appears
         .fromTo(nextProjects, 0.3, {opacity: 0, y: 30}, {opacity: 1, y: 0})
         .set(nextLeft, {clearProps: 'all'})
@@ -53,14 +58,16 @@ export const nextSlide = (pages, current, pageNumber) => {
         } else if (currentProjects != null && nextProjects == null){
             tl.fromTo(currentText, 0.2, {opacity: 1, y: 0}, {opacity: 0, y: -30})
             .fromTo(currentProjects, 0.2, {opacity: 1, y: 0}, {opacity: 0, y: 30}, '-=0.2')
+            .fromTo(currentLeft, 0.3, {y: '-5%'}, {y: '-100%'}, '-=0.2') // currentLeft dissappears
+            .fromTo(currentRight, 0.3, {y: '5%'}, {y: '-100%'}, '-=0.2')
             .to(portfolio, 0.3, { backgroundImage: backgrounds[pageNumber] }) // update bg
-            .fromTo(currentPage, 0.2, {opacity:1, pointerEvents: 'all'}, {opacity:0, pointerEvents: 'none'}) // current page disappears
+            .fromTo(currentPage, 0.2, {opacity: 1, pointerEvents: 'all'}, {opacity:0, pointerEvents: 'none'}) // current page disappears
             .fromTo(currentPage, 0.1, {display: 'grid'}, {display: 'none'}) // current page's display changes
-            .fromTo(nextPage, 0.2, {display: 'none'}, {display: 'grid'}) // next page's display changes
-            .fromTo(nextPage, 0.2, {opacity: 0, pointerEvents: 'none'}, {opacity: 1, pointerEvents: 'all'}, "-=0.2") // next page appears
-            .fromTo(nextLeft, 0.3, {y: '-100%'}, {y: '-5%'}, '-=0.6') // currentLeft appears
-            .fromTo(nextRight, 0.3, {y: '-100%'}, {y: '5%'}, '-=0.8')
-            .fromTo(nextText, 0.3, {opacity: 0, y: 30}, {opacity: 1, y: 0}) //next text appears
+            .fromTo(nextPage, 0.1, {display: 'none'}, {display: 'grid'}) // next page's display changes
+            .fromTo(nextPage, 0.2, {opacity: 0, pointerEvents: 'none'}, {opacity: 1, pointerEvents: 'all'}, "-=0.15") // next page appears
+            .fromTo(nextLeft, 0.2, {y: '-100%'}, {y: '-5%'}, '-=0.1') // currentLeft appears
+            .fromTo(nextRight, 0.2, {y: '-100%'}, {y: '5%'}, '-=0.1')
+            .fromTo(nextText, 0.3, {opacity: 0, y: -30}, {opacity: 1, y: 0}) //next text appears
             .set(nextLeft, {clearProps: 'all'})
             .set(nextRight, {clearProps: 'all'});
         }
@@ -71,14 +78,14 @@ export const nextSlide = (pages, current, pageNumber) => {
             .to(portfolio, 0.3, { backgroundImage: backgrounds[pageNumber] }) // update bg
             .fromTo(currentPage, 0.2, {opacity: 1, pointerEvents: 'all'}, {opacity: 0, pointerEvents: 'none'}) // current page disappears
             .fromTo(currentPage, 0.1, {display: 'grid'}, {display: 'none'}) // current page's display changes
-            .fromTo(nextPage, 0.2, {display: 'none'}, {display: 'grid'}) // next page's display changes
-            .fromTo(nextPage, 0.2, {opacity: 0, pointerEvents: 'none'}, {opacity: 1, pointerEvents: 'all'}, "-=0.2") // next page appears
-            .fromTo(nextLeft, 0.3, {y: '-100%'}, {y: '-5%'}, '-=0.6') // currentLeft appears
-            .fromTo(nextRight, 0.3, {y: '-100%'}, {y: '5%'}, '-=0.8')
-            .fromTo(nextText, 0.3, {opacity: 0, y: 30}, {opacity: 1, y: 0}) //next text appears
+            .fromTo(nextPage, 0.1, {display: 'none'}, {display: 'grid'}) // next page's display changes
+            .fromTo(nextPage, 0.2, {opacity: 0, pointerEvents: 'none'}, {opacity: 1, pointerEvents: 'all'}, "-=0.1") // next page appears
+            .fromTo(nextLeft, 0.2, {y: '-100%'}, {y: '-5%'}, '-=0.1') // currentLeft appears
+            .fromTo(nextRight, 0.2, {y: '-100%'}, {y: '5%'}, '-=0.1')
+            .fromTo(nextText, 0.3, {opacity: 0, y: -30}, {opacity: 1, y: 0}) //next text appears
             .set(nextLeft, {clearProps: 'all'})
             .set(nextRight, {clearProps: 'all'});
         }
-        current = pageNumber;
+        return current = pageNumber;
 
 }
