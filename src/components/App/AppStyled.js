@@ -6,41 +6,34 @@ const AppStyled = styled.div`
     font-weight: 100;
     font-family: ${theme.contentFont};
     color: ${theme.fontColor};
-/*
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-*/
 
     .portfolio {
-        /*
-        height: 200vh;
-        height: calc(var(--vh, 1vh) * 200);
-        */
-       background-image: radial-gradient(#4B4B4B, #0B1023);
+        background-image: radial-gradient(#4B4B4B, #0B1023);
         background-size: cover;
-        
-    }
-    .page {
-        
     }
 
     .standard-page, .page-projects {
-        
         min-height: 100vh;
         min-height: calc(var(--vh, 1vh) * 100);
-        
-        
         display: grid;
         grid-template-columns: 5% 1fr 5%;
     }
 
+/* A remettre après
     .page-projects, .training, .contact {
         display: none;
         width: 100%;
         opacity: 0;
         pointer-events: none;
     }
-
+    A virer après :
+*/
+.standard-page, .page-projects, .contact {
+        display: none;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+    }
 /*
     .page-projects, .training, .contact {
         position: absolute;
