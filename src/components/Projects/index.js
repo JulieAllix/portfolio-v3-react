@@ -11,7 +11,9 @@ class Projects extends React.Component {
     return (
       <ProjectsStyled>
         <section className="page-projects page">
+        
             <div className="details-txt detail">
+            
                 <h1>My personal projects</h1>
                 <div className="details-projects">
                     <div className="p-skills"><p>Hover the below skills to highlight the projects on which I’ve put them into practice :</p></div>

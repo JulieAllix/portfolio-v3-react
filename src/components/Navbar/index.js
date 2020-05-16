@@ -4,7 +4,7 @@ import $ from 'jquery';
 import NavbarStyled from './NavbarStyled';
 
 //import handleClick from 'function/handleClick';
-import { changeDots, bold, nextSlide } from 'function/changeDots';
+import { changeDots, bold, nextSlide } from 'function/changePage';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -58,23 +58,22 @@ class Navbar extends React.Component {
     let scrollSlide = 0;
 
     slides.forEach((slide, index) => {
-      $('.slide').on('click', (event) => {
+      slide.addEventListener('click', function(event) {
         const dot = event.currentTarget;
         changeDots(slides, dot);
         nextSlide(pages, current, index);
+    });
+    /*
         scrollSlide = index;
-        /*
-        nextSlide(index);
-        */
-      });
+      });*/
     });
 
-    pages.forEach((page, index) => {
-      $('.page-name').on('click', (event) => {
+    pageNames.forEach((page, index) => {
+      page.addEventListener('click', function(event) {
+        console.log('page cliquée !')
         const page = event.currentTarget;
         bold(pageNames, page);
         nextSlide(pages, current, index);
-        scrollSlide = index;
       });
     });
 

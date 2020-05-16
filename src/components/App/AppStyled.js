@@ -6,32 +6,50 @@ const AppStyled = styled.div`
     font-weight: 100;
     font-family: ${theme.contentFont};
     color: ${theme.fontColor};
-    
+/*
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
+*/
 
     .portfolio {
-        height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
-
+        /*
+        height: 200vh;
+        height: calc(var(--vh, 1vh) * 200);
+        */
+       background-image: radial-gradient(#4B4B4B, #0B1023);
+        background-size: cover;
+    }
+    .page {
+        
     }
 
     .standard-page, .page-projects {
-        height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
+        
+        min-height: 100vh;
+        min-height: calc(var(--vh, 1vh) * 100);
+        
+        
         display: grid;
         grid-template-columns: 5% 1fr 5%;
     }
 
     .page-projects, .training, .contact {
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
+        display: none;
         width: 100%;
         opacity: 0;
         pointer-events: none;
     }
 
+/*
+    .page-projects, .training, .contact {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+    }
+*/
     .hero {
         height: 290px;
         grid-column: 2/3;

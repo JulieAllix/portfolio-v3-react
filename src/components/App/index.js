@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Test from '../Test';
 import Home from '../Home';
 import Projects from '../Projects';
 import Navbar from '../Navbar';
@@ -21,7 +22,9 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMount');
+    document.body.style.position = 'relative';
+    document.body.style.height = 'auto';
+    document.body.style.minHeight = '100% !important';
     // Custom viewport unit
     window.addEventListener('resize', () => {
       let vh = window.innerHeight * 0.01;
@@ -39,9 +42,13 @@ class App extends React.Component {
     return (
       <AppStyled>
         <div className="portfolio">
+        {/*
+          <Test />
+        */}
           <Home />
           <Projects />
           <Navbar />
+          
         </div>
       </AppStyled>
     );

@@ -2,10 +2,7 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 const ProjectsStyled = styled.div`
-    overflow-x: hidden;
-
-    background-image: radial-gradient(#225D94, #0B1023);
-    background-size: cover;
+    /*overflow-x: hidden;*/
 
     .details-projects {
         border: 2px solid white;
@@ -25,7 +22,7 @@ const ProjectsStyled = styled.div`
     .p-click {
         display: block;
         text-align: center;
-        padding-top: 1rem;
+        padding: 1.3rem;
         font-size: ${theme.contentSizeMobile};
         animation: shake-bottom 4s;
         animation-delay: 2s;
@@ -96,8 +93,11 @@ const ProjectsStyled = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
+        /*
         margin-top: 2rem;
         padding: 0;
+        */
     }
 
     .hero-projects .hero {

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import theme from '../../styles/theme';
 
-const HomeStyled = styled.div`
+const TestStyled = styled.div`
 
     .details {
         grid-column: 2/3;
@@ -195,4 +195,4 @@ const HomeStyled = styled.div`
 */
 `
 
-export default HomeStyled;
+export default TestStyled;
