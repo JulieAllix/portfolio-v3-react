@@ -19,7 +19,7 @@ export default [
                 paragraphs: [
                     {
                         id: 1,
-                        text: 'O\'clock is a French school based on a "teleworking" model : there is a virtual classroom enabling the teachers to teach from home, and the students to learn from home as well. The interface shows the screen & webcam of the teacher, and there is a chat enabling the students to interact with the teacher and the other students.'
+                        text: 'O\'clock is a French school based on a "teleworking" model : there is a virtual classroom with a teacher teaching from home.'
                     }
                     
                 ]
@@ -34,7 +34,7 @@ export default [
                     },
                     {
                         id: 2,
-                        text: 'The curriculum is composed of three months of learning the basics to become a web developer (html, css, php, js, sql), then one month of specialization (Symfony, React, or Wordpress). And then one month of full-time team-project, the "Apotheosis" (you can see my project on this portfolio, it\'s called Grocer\'eaz).'
+                        text: 'The curriculum is composed of three months of learning the basics to become a web developer (html, css, php, js, sql), then one month of specialization (Symfony, React, or Wordpress) and one month of full-time team-project.'
                     }
                 ]
             },

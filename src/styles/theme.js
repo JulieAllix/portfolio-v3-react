@@ -23,10 +23,18 @@ const theme = {
     titleSize: '2.5rem',
     /*titleSize: '3rem',*/
 
+    subtitleSizeMobileHorizontal: '1.2rem',
+    subtitleSizeMobile: '1.3rem',
+    subtitleSizeTablet: '2rem',
+    subtitleSize: '2.1rem',
+
     contentSizeMobile: '.8rem',
     contentSizeTablet: '1.1rem',
     contentSize: '.8rem',
 
+    textSizeMobile: '1rem',
+    textSizeTablet: '1.5rem',
+    textSize: '1.2rem',
     
 };
 
