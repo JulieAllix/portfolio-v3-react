@@ -18,6 +18,7 @@ const AppStyled = styled.div`
         */
        background-image: radial-gradient(#4B4B4B, #0B1023);
         background-size: cover;
+        
     }
     .page {
         
@@ -128,7 +129,7 @@ const AppStyled = styled.div`
     @media screen and (min-width: 1025px){
         */
     @media screen and (min-width: 1425px){
-
+        overflow: hidden;
         .standard-page, .page-projects {
             grid-template-columns: 5% 1fr 1fr 1fr 5%;
         }

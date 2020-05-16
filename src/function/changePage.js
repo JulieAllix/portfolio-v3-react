@@ -46,8 +46,8 @@ export const nextSlide = (pages, current, pageNumber) => {
         .fromTo(currentPage, 0.1, {display: 'grid'}, {display: 'none'}) // current page's display changes
         .fromTo(nextPage, 0.2, {display: 'none'}, {display: 'grid'}) // next page's display changes
         .fromTo(nextPage, 0.2, {opacity: 0, pointerEvents: 'none'}, {opacity: 1, pointerEvents: 'all'}, "-=0.2") // next page appears
-        .fromTo(nextProjects, 0.3, {opacity: 0, y: -30}, {opacity: 1, y: 0}, '-=0.2')
-        .fromTo(nextText, 0.3, {opacity: 0, y: 30}, {opacity: 1, y: 0}) //next text appears
+        .fromTo(nextText, 0.3, {opacity: 0, y: -30}, {opacity: 1, y: 0}, '-=0.2') //next text appears
+        .fromTo(nextProjects, 0.3, {opacity: 0, y: 30}, {opacity: 1, y: 0})
         .set(nextLeft, {clearProps: 'all'})
         .set(nextRight, {clearProps: 'all'});
         } else if (currentProjects != null && nextProjects == null){
@@ -80,51 +80,5 @@ export const nextSlide = (pages, current, pageNumber) => {
             .set(nextRight, {clearProps: 'all'});
         }
         current = pageNumber;
-
-
-    /*
-    if (currentProjects == null && nextProjects != null){
-        tl.fromTo(currentText, 0.2, {opacity: 1, y: 0}, {opacity: 0, y: -30})
-        .fromTo(currentLeft, 0.3, {y: '-7%'}, {y: '-100%'}, '-=0.2') // currentLeft dissappears
-        .fromTo(currentRight, 0.3, {y: '7%'}, {y: '-100%'}, '-=0.2')
-        .to(portfolio, 0.3, { backgroundImage: backgrounds[pageNumber] }) // update bg
-        .fromTo(currentPage, 0.3, {opacity:1, pointerEvents: 'all'}, {opacity:0, pointerEvents: 'none'}) // current page disappears
-        .fromTo(nextPage, 0.3, {opacity:0, pointerEvents: 'none'}, {opacity:1, pointerEvents: 'all'}, "-=0.6") // next page appears
-        .fromTo(nextLeft, 0.3, {y: '-100%'}, {y: '-7%'}, '-=0.6') // currentLeft appears
-        .fromTo(nextRight, 0.3, {y: '-100%'}, {y: '7%'}, '-=0.8')
-        .fromTo(nextProjects, 0.2, {opacity: 0, y: -30}, {opacity: 1, y: 0}, '-=0.2')
-        .fromTo(nextText, 0.3, {opacity: 0, y: 30}, {opacity: 1, y: 0}) //next text appears
-        .set(nextLeft, {clearProps: 'all'})
-        .set(nextRight, {clearProps: 'all'});
-        } else if (currentProjects != null && nextProjects == null){
-            tl.fromTo(currentText, 0.2, {opacity: 1, y: 0}, {opacity: 0, y: -30})
-            .fromTo(currentProjects, 0.2, {opacity: 1, y: 0}, {opacity: 0, y: 30}, '-=0.2')
-            .fromTo(currentLeft, 0.3, {y: '-7%'}, {y: '-100%'}, '-=0.2') // currentLeft dissappears
-            .fromTo(currentRight, 0.3, {y: '7%'}, {y: '-100%'}, '-=0.2')
-            .to(portfolio, 0.3, { backgroundImage: backgrounds[pageNumber] }) // update bg
-            .fromTo(currentPage, 0.3, {opacity:1, pointerEvents: 'all'}, {opacity:0, pointerEvents: 'none'}) // current page disappears
-            .fromTo(nextPage, 0.3, {opacity:0, pointerEvents: 'none'}, {opacity:1, pointerEvents: 'all'}, "-=0.6") // next page appears
-            .fromTo(nextLeft, 0.3, {y: '-100%'}, {y: '-7%'}, '-=0.6') // currentLeft appears
-            .fromTo(nextRight, 0.3, {y: '-100%'}, {y: '7%'}, '-=0.8')
-            .fromTo(nextText, 0.3, {opacity: 0, y: 30}, {opacity: 1, y: 0}) //next text appears
-            .set(nextLeft, {clearProps: 'all'})
-            .set(nextRight, {clearProps: 'all'});
-        }
-        else {
-            tl.fromTo(currentText, 0.2, {opacity: 1, y: 0}, {opacity: 0, y: -30})
-            .fromTo(currentLeft, 0.3, {y: '-7%'}, {y: '-100%'}, '-=0.2') // currentLeft dissappears
-            .fromTo(currentRight, 0.3, {y: '7%'}, {y: '-100%'}, '-=0.2')
-            .to(portfolio, 0.3, { backgroundImage: backgrounds[pageNumber] }) // update bg
-            .fromTo(currentPage, 0.3, {opacity:1, pointerEvents: 'all'}, {opacity:0, pointerEvents: 'none'}) // current page disappears
-            .fromTo(nextPage, 0.3, {opacity:0, pointerEvents: 'none'}, {opacity:1, pointerEvents: 'all'}, "-=0.6") // next page appears
-            .fromTo(nextLeft, 0.3, {y: '-100%'}, {y: '-7%'}, '-=0.6') // currentLeft appears
-            .fromTo(nextRight, 0.3, {y: '-100%'}, {y: '7%'}, '-=0.8')
-            .fromTo(nextText, 0.3, {opacity: 0, y: 30}, {opacity: 1, y: 0}) //next text appears
-            .set(nextLeft, {clearProps: 'all'})
-            .set(nextRight, {clearProps: 'all'});
-        }
-        current = pageNumber;
-
-        */
 
 }

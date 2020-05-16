@@ -93,11 +93,6 @@ const ProjectsStyled = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
-        /*
-        margin-top: 2rem;
-        padding: 0;
-        */
     }
 
     .hero-projects .hero {
@@ -231,6 +226,7 @@ const ProjectsStyled = styled.div`
     }
 
     @media screen and (min-width: 1780px){
+        
 
         .details-projects {
             padding: 1.5rem;
