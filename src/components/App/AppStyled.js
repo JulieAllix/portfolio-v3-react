@@ -28,7 +28,7 @@ const AppStyled = styled.div`
     }
     A virer après :
 */
-.standard-page, .page-projects, .contact {
+.home, .page-projects, .contact {
         display: none;
         width: 100%;
         opacity: 0;
