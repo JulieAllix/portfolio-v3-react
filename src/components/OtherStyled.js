@@ -40,6 +40,28 @@ const TrainingStyled = styled.div`
         margin-right: 1em;
     }
 
+    .contact-name {
+        position: relative;
+    }
+
+    .contact-name:hover .tooltip {
+        opacity: 1;
+        transition: .6s;
+    }
+
+    .tooltip {
+        background-color: rgb(187, 185, 185);
+        border: 1px solid rgb(187, 185, 185);
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        position: absolute;
+        left: 5rem;
+        width: 15rem;
+        top: 0;
+        opacity: 0;
+        transition: .6s;
+    }
     @media screen and (max-height: 415px){
 
         .details-txt h3 {

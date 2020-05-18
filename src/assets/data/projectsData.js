@@ -57,7 +57,7 @@ export default [
         imageOne: oneBreakfree,
         imageTwo: twoBreakfree,
         alt: 'The game I created in JS: Break Free',
-        about: "I started this project because I was curious about basic videogames design. I first followed <a href=\"https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript\">this mozilla tutorial</a>. Then I adapted the code to organize it differently, created variables enabling to design different levels quickly. And I added new functionalities : an input request to get the name of the player, 4 levels of difficulty, a connection to a database to send the score of the player and to display the top 20 scores for each level.",
+        about: "I started this project because I was curious about basic videogames design. I first followed <a target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript\">this mozilla tutorial</a>. Then I adapted the code to organize it differently, created variables enabling to design different levels quickly. And I added new functionalities : an input request to get the name of the player, 4 levels of difficulty, a connection to a database to send the score of the player and to display the top 20 scores for each level.",
         timing: 'This is my second personal project. I worked on it during the month of November 2019.',
         skillsUsed: ['JavaScript', 'Cookies', 'SQL / Databases'],
         skillsDiscovered: ['Canvas', '2D animation'],

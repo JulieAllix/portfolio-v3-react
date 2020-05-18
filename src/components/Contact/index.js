@@ -22,25 +22,32 @@ class Contact extends React.Component {
                     </div>
                   ))}
                   <h3>Contact information</h3>
-                    <ul class="contact-list">
+                    <ul className="contact-list">
                       {data.contactInfo.map((info) => (
-                        <li class="contact-info" key={info.id}>
+                        <li className="contact-info" key={info.id}>
                           <img
-                              class="contact-icon"
+                              className="contact-icon"
                               src={info.icon}
                               alt={info.alt}
                           />
-                          <span class="contact-name">{info.text}</span>
+                          <span className="contact-name">{info.text}</span>
                         </li>
                       ))}
                       {data.contactInfoWithLink.map((info) => (
-                        <li class="contact-info" key={info.id}>
+                        <li className="contact-info" key={info.id}>
                           <img
-                              class="contact-icon"
+                              className="contact-icon"
                               src={info.icon}
                               alt={info.alt}
                           />
-                          <span class="contact-name"><a href={info.href}>{info.text}</a></span>
+                          <a className="contact-link" href={info.href} target="_blank">
+                            <span className="contact-name">
+                              {info.text}
+                              <div className="tooltip">
+                                <span>Opens in a new tab</span>
+                              </div>
+                          </span>
+                          </a>
                         </li>
                       ))}
                     </ul>

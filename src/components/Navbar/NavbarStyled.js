@@ -48,7 +48,7 @@ const NavbarStyled = styled.div`
             transform: scale(1.5);
         }
         100% {
-            transform: scale(2.5);
+            transform: scale(1.9);
         }
 
     }
@@ -98,6 +98,12 @@ const NavbarStyled = styled.div`
 
         .slide {
             display: flex;
+        }
+
+        .slide:focus {
+            outline: none;
+            opacity: 1;
+            animation: dot 0.5s ease-in-out infinite alternate; 
         }
 
     }

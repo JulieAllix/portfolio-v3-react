@@ -9,6 +9,7 @@ import { changeDots, bold, nextSlide } from 'function/changePage';
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
+    this.test = this.test.bind(this);
     /*
     this.highlight = this.highlight.bind(this);
     this.state = {
@@ -18,6 +19,9 @@ class Navbar extends React.Component {
       contact: false,
     };
     */
+  }
+  test() {
+    console.log('oui oui ouiii !');
   }
 /*
   highlight(element, bool) {
@@ -63,6 +67,13 @@ class Navbar extends React.Component {
         changeDots(slides, dot);
         current = nextSlide(pages, current, index);
     });
+    slide.addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        const dot = event.currentTarget;
+        changeDots(slides, dot);
+        current = nextSlide(pages, current, index);
+      }
+  });
     /*
         scrollSlide = index;
       });*/
@@ -93,6 +104,7 @@ class Navbar extends React.Component {
                     viewBox="0 0 12 12"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    tabIndex="1"
                 >
                     <circle cx="6" cy="6" r="6" fill="white" />
                 </svg>
@@ -107,6 +119,7 @@ class Navbar extends React.Component {
                     viewBox="0 0 12 12"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    tabIndex="2"
                 >
                   <circle cx="6" cy="6" r="6" fill="white" />
                 </svg>
@@ -121,6 +134,7 @@ class Navbar extends React.Component {
                     viewBox="0 0 12 12"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    tabIndex="3"
                 >
                     <circle cx="6" cy="6" r="6" fill="white" />
                 </svg>
@@ -135,6 +149,7 @@ class Navbar extends React.Component {
                     viewBox="0 0 12 12"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    tabIndex="4"
                 >
                     <circle cx="6" cy="6" r="6" fill="white" />
                 </svg>
