@@ -16,8 +16,6 @@ import AppStyled from './AppStyled';
 
 import { render } from '@testing-library/react';
 
-import handleRoll from 'function/handleRoll';
-
 class App extends React.Component {
 
   componentDidMount() {

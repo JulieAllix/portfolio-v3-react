@@ -239,6 +239,7 @@ const ProjectsStyled = styled.div`
             text-align: center;
             font-size: ${theme.contentSizeTablet};
             margin-top: 1.5rem;
+            line-height: 2rem;
         }
 
         .p-skills-tactile {

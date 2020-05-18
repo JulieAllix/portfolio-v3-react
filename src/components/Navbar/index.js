@@ -4,7 +4,7 @@ import $ from 'jquery';
 import NavbarStyled from './NavbarStyled';
 
 //import handleClick from 'function/handleClick';
-import { changeDots, bold, throttle, nextSlide } from 'function/changePage';
+import { changeDots, bold, throttle, scrollChange, nextSlide } from 'function/changePage';
 
 class Navbar extends React.Component {
 
@@ -16,26 +16,6 @@ class Navbar extends React.Component {
     // Tracker
     let current = 0;
     let scrollSlide = 0;
-
-    document.addEventListener('wheel', throttle(function(event) {
-      if (event.deltaY > 0){
-        scrollSlide += 1;
-      } else {
-          scrollSlide -= 1;
-      }
-
-      if (scrollSlide > 3){
-          scrollSlide = 0;
-      }
-      if (scrollSlide < 0){
-          scrollSlide = 3;
-      }
-      
-      const dot = slides[scrollSlide];
-      changeDots(slides, dot);
-      nextSlide(pages, current, scrollSlide, slides);
-      current = scrollSlide;
-    }, 1500));
 
     slides.forEach((slide, index) => {
       slide.addEventListener('click', function(event) {
@@ -64,7 +44,6 @@ class Navbar extends React.Component {
       });
     });
 
-    //document.addEventListener('wheel', handleClick);
   }
 
   render() {

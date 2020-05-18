@@ -25,7 +25,7 @@ const theme = {
     subtitleSizeMobileHorizontal: '1.2rem',
     subtitleSizeMobile: '1.3rem',
     subtitleSizeTablet: '2rem',
-    subtitleSize: '2.1rem',
+    subtitleSize: '1.7rem',
 
     contentSizeMobile: '.8rem',
     contentSizeTablet: '1.1rem',
