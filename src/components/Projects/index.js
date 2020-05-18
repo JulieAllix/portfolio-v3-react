@@ -19,41 +19,83 @@ class Projects extends React.Component {
       portfoliov2IsHighlighted: false,
       portfoliov3IsHighlighted: false,
     };
-    this.consoleLog = this.consoleLog.bind(this);
   }
 
-  consoleLog(children) {
-    console.log(children);
-    return false;
-  }
-
+  // Changes the state to highlight the projects linked to a skill
   highlight(project, bool) {
     switch (project) {
+
       case 'studyCards':
         this.setState({
           studyCardsIsHighlighted: bool,
         });
         break;
+
       case 'breakFree':
         this.setState({
           breakFreeIsHighlighted: bool,
         });
         break;
+
       case 'grocereaz':
         this.setState({
           grocereazIsHighlighted: bool,
         });
         break;
+
       case 'portfolioV2':
         this.setState({
           portfolioV2IsHighlighted: bool,
         });
         break;
+
       case 'portfolioV3':
         this.setState({
           portfolioV3IsHighlighted: bool,
         });
         break;
+
+      case 'grocereaz + portfolioV2':
+      this.setState({
+        grocereazIsHighlighted: bool,
+        portfolioV2IsHighlighted: bool,
+      });
+      break;
+
+      case 'grocereaz + portfolioV2 + portfolioV3':
+        this.setState({
+          grocereazIsHighlighted: bool,
+          portfolioV2IsHighlighted: bool,
+          portfolioV3IsHighlighted: bool,
+        });
+        break;
+
+      case 'breakFree + portfolioV3':
+        this.setState({
+          breakFreeIsHighlighted: bool,
+          portfolioV3IsHighlighted: bool,
+        });
+        break;
+
+      case 'studyCards + grocereaz + portfolioV2 + portfolioV3':
+        this.setState({
+          studyCardsIsHighlighted: bool,
+          grocereazIsHighlighted: bool,
+          portfolioV2IsHighlighted: bool,
+          portfolioV3IsHighlighted: bool,
+        });
+        break;
+
+      case 'all':
+        this.setState({
+          studyCardsIsHighlighted: bool,
+          breakFreeIsHighlighted: bool,
+          grocereazIsHighlighted: bool,
+          portfolioV2IsHighlighted: bool,
+          portfolioV3IsHighlighted: bool,
+        });
+        break;
+        
       default:
         break;
     }
@@ -68,7 +110,6 @@ class Projects extends React.Component {
                 <div className="details-projects">
                     <div className="p-skills"><p>Hover the below skills to highlight the projects on which I’ve put them into practice :</p></div>
                     <p className="p-skills-tactile">Some of the skills I've put into practice in my personal projects</p>
-                    
                     <ul className="skills">
                       {skillsData.map((skill) => (
                         <li className={skill.liClass} key={skill.id}>
@@ -101,18 +142,10 @@ class Projects extends React.Component {
                         </li>
                       ))}
                     </ul>
-                    
                 </div>
                 <p className="p-click animate__animated animate__headShake">Click on the pictures to see the projects !</p>
             </div>
-            
             <div className="hero-projects projects">
-                <div className="hero">
-                
-                    <div className="photo-left"></div>
-                    <div className="photo-right"></div>
-                </div>
-                
                 {projectsData.map((project) => (
                   <Link to={project.slug} key={project.id}>
                     <img
@@ -126,7 +159,6 @@ class Projects extends React.Component {
                   </Link>
                   ))}
             </div>
-
         </section>
       </ProjectsStyled>
     );

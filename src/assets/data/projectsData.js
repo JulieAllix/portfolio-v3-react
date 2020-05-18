@@ -122,7 +122,7 @@ export default [
         about: 'This is the third version of my portfolio. The goal of this project was to improve the general design with the help of Figma and use JavaScript animations.',
         timing: 'I worked on this project on May 2020.',
         skillsUsed: ['HTML / CSS', 'JavaScript', 'Responsive Design'],
-        skillsDiscovered: ['Figma', 'JavaScript animations'],
+        skillsDiscovered: ['Figma', 'JavaScript animations (Gsap)'],
         projectUrl: 'http://julieallix.com/',
         gitHubUrl: 'https://github.com/JulieAllix/portfolio-v3-react',
     },

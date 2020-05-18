@@ -15,13 +15,13 @@ export default [
         id: 3,
         idName: 'responsiveDesign',
         skill: 'Responsive Design',
-        project: 'grocereaz',
+        project: 'grocereaz + portfolioV2 + portfolioV3',
     },
     {
         id: 4,
         idName: 'styledComponents',
         skill: 'Styled Components',
-        project: 'grocereaz',
+        project: 'grocereaz + portfolioV2 + portfolioV3',
     },
     {
         id: 5,
@@ -54,10 +54,16 @@ export default [
         project: 'breakFree',
     },
     {
-      id: 10,
-      idName: 'figma',
-      skill: 'Figma',
-      project: 'portfolioV3',
+        id: 10,
+        idName: 'figma',
+        skill: 'Figma',
+        project: 'portfolioV3',
+    },
+    {
+        id: 11,
+        idName: 'Gsap',
+        skill: 'Gsap',
+        project: 'portfolioV3',
     },
     
   ];

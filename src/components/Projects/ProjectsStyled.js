@@ -75,16 +75,19 @@ const ProjectsStyled = styled.div`
 
     .logo-skill {
         height: 50px;
+        cursor: pointer;
     }
 
     .logo-skill-lg {
         width: 50px;
         align-self: center;
+        cursor: pointer;
     }
 
     .skill-name {
         padding: 5px 0;
-        font-size: ${theme.contentSizeMobile}
+        font-size: ${theme.contentSizeMobile};
+        cursor: pointer;
     }
 
     .hero-projects {
@@ -282,9 +285,19 @@ const ProjectsStyled = styled.div`
 
         .highlighted--project {
             filter: none;
-            transform: scale(1.08);
+            animation: highlight 0.5s infinite alternate;
         }
 
+        @keyframes highlight {
+
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+
+        }
     }
 
 `
