@@ -65,13 +65,13 @@ class Navbar extends React.Component {
       slide.addEventListener('click', function(event) {
         const dot = event.currentTarget;
         changeDots(slides, dot);
-        current = nextSlide(pages, current, index);
+        current = nextSlide(pages, current, index, slides);
     });
     slide.addEventListener('keypress', function(event) {
       if (event.key === 'Enter') {
         const dot = event.currentTarget;
         changeDots(slides, dot);
-        current = nextSlide(pages, current, index);
+        current = nextSlide(pages, current, index, slides);
       }
   });
     /*
@@ -83,7 +83,7 @@ class Navbar extends React.Component {
       page.addEventListener('click', function(event) {
         const page = event.currentTarget;
         bold(pageNames, page);
-        current = nextSlide(pages, current, index);
+        current = nextSlide(pages, current, index, slides);
       });
     });
 
