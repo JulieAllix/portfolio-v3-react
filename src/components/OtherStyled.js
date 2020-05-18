@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from '../../styles/theme';
+import theme from '../styles/theme';
 
 const TrainingStyled = styled.div`
    
@@ -25,13 +25,28 @@ const TrainingStyled = styled.div`
         line-height: 1.2rem;
     }
 
+    .contact-list {
+        list-style: none;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    
+    .contact-icon {
+        width: 25px;
+        margin-right: 1em;
+    }
 
     @media screen and (max-height: 415px){
+
         .details-txt h3 {
             text-align: left;
         }
-    }
 
+    }
 
     @media screen and (min-width: 760px) and (min-height: 550px){
 
@@ -67,7 +82,6 @@ const TrainingStyled = styled.div`
         .p-content {
             font-size: ${theme.textSize};
         }
-
 
     }
 

@@ -43,25 +43,23 @@ const NavbarStyled = styled.div`
     }
 
     @keyframes dot {
+
         0% {
             transform: scale(1.5);
         }
         100% {
             transform: scale(2.5);
         }
+
     }
+
     .pages svg.active {
         opacity: 1;
     }
+
     .pages h4.active {
         font-weight: bold;
         text-decoration: underline;
-    }
-
-    @media screen and (max-height: 415px){
-
-
-
     }
 
     @media screen and (min-width: 760px) and (min-height: 550px){
@@ -72,9 +70,6 @@ const NavbarStyled = styled.div`
 
     }
     
-    /*
-    @media screen and (min-width: 1025px){
-        */
     @media screen and (min-width: 1425px){
 
         .pages {
@@ -108,19 +103,13 @@ const NavbarStyled = styled.div`
     }
 
     @media screen and (min-width: 1780px) {
+
         .pages {
             width: 12%;
         }
-    }
-
-    @media screen and (min-width: 1900px) {
-        
-
 
     }
 
-
-*/
 `
 
 export default NavbarStyled;

@@ -4,6 +4,7 @@ import Test from '../Test';
 import Home from '../Home';
 import Projects from '../Projects';
 import Training from '../Training';
+import Contact from '../Contact';
 import Navbar from '../Navbar';
 
 import AppStyled from './AppStyled';
@@ -46,6 +47,7 @@ class App extends React.Component {
           <Home />
           <Projects />
           <Training />
+          <Contact />
           <Navbar />
         </div>
       </AppStyled>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TrainingStyled from './TrainingStyled';
+import OtherStyled from '../OtherStyled';
 
 import otherData from 'assets/data/otherData';
 const data = otherData[0];
@@ -9,7 +9,7 @@ const content = data.content;
 class Training extends React.Component {
   render() {
     return (
-      <TrainingStyled>
+      <OtherStyled>
         <section className="standard-page training page">
             <div className="details-txt detail">
                 <h1>{data.name}</h1>
@@ -35,7 +35,7 @@ class Training extends React.Component {
               />
             </div>
         </section>
-      </TrainingStyled>
+      </OtherStyled>
     );
   }
 }

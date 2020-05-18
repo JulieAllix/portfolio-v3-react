@@ -2,10 +2,15 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 const AppStyled = styled.div`
+
     font-size: 16px;
     font-weight: 100;
     font-family: ${theme.contentFont};
     color: ${theme.fontColor};
+    
+    a {
+        color: ${theme.linkColor};
+    }
 
     .portfolio {
         background-image: radial-gradient(#4B4B4B, #0B1023);
@@ -26,16 +31,6 @@ const AppStyled = styled.div`
         pointer-events: none;
     }
 
-/*
-    .page-projects, .training, .contact {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        opacity: 0;
-        pointer-events: none;
-    }
-*/
     .hero {
         height: 290px;
         grid-column: 2/3;
@@ -108,13 +103,13 @@ const AppStyled = styled.div`
             font-size: ${theme.titleSizeTablet};
             margin: 4rem auto 1rem;
         }
+
     }
 
-    /*
-    @media screen and (min-width: 1025px){
-        */
     @media screen and (min-width: 1425px){
+        
         overflow: hidden;
+
         .standard-page, .page-projects {
             grid-template-columns: 5% 1fr 1fr 1fr 5%;
         }

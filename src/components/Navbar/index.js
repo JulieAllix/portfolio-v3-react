@@ -70,7 +70,6 @@ class Navbar extends React.Component {
 
     pageNames.forEach((page, index) => {
       page.addEventListener('click', function(event) {
-        console.log('page cliquée !')
         const page = event.currentTarget;
         bold(pageNames, page);
         current = nextSlide(pages, current, index);

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 const ProjectsStyled = styled.div`
-    /*overflow-x: hidden;*/
 
     .details-projects {
         border: 2px solid white;
@@ -30,6 +29,7 @@ const ProjectsStyled = styled.div`
     }
 
     @keyframes shake-bottom {
+
         0% {
             transform: translateY(0%);
         }
@@ -48,6 +48,7 @@ const ProjectsStyled = styled.div`
         100% {
             transform: translateY(0%);
         }
+
     }
 
     .skills {
@@ -124,7 +125,6 @@ const ProjectsStyled = styled.div`
         transition: .6s;
     }
     
-
     @media screen and (max-height: 415px){
 
         .project-ico {
@@ -181,10 +181,6 @@ const ProjectsStyled = styled.div`
 
     }
 
-/*
-    @media screen and (min-width: 1025px){
-*/
-
     @media screen and (min-width: 1425px){
 
         .hero-projects {
@@ -204,6 +200,7 @@ const ProjectsStyled = styled.div`
         }
 
         @keyframes shake-right {
+
             0% {
                 transform: translateX(0%);
             }
@@ -222,12 +219,13 @@ const ProjectsStyled = styled.div`
             100% {
                 transform: translateX(0%);
             }
+
         }
+
     }
 
     @media screen and (min-width: 1780px){
         
-
         .details-projects {
             padding: 1.5rem;
             width: 32vw;
@@ -281,7 +279,6 @@ const ProjectsStyled = styled.div`
             filter: grayscale(1);
             transition: .6s;
         }
-
 
     }
 

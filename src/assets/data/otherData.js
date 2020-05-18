@@ -49,35 +49,63 @@ export default [
                 ]
             },
         ],
-        subtitles: [
-            'A virtual classroom',
-            'A well organized curriculum',
-            'A lot of practical exercises'
-        ],
-        paragraphs: [
-            'O\'clock is a French school based on a "teleworking" model : there is a virtual classroom enabling the teachers to teach from home, and the students to learn from home as well. The interface shows the screen & webcam of the teacher, and there is a chat enabling the students to interact with the teacher and the other students.',
-            'Every weekday, the students get five hours of theoretical class and two hours of practical exercises in autonomy. The curriculum is composed of three months of learning the basics to become a web developer (html, css, php, js, sql), then one month of specialization (Symfony, React, or Wordpress). And then one month of full-time team-project, the "Apotheosis" (you can see my project on this portfolio, it\'s called Grocer\'eaz).',
-            'Two-hours challenges on a daily basis, eight peer-programming workshop days, one month of full-time project with a team ...'
-        ],
         imgLeft: trainingLeft,
         imgRight: trainingRight,
     },
     {
         id: 2,
         name: 'Contact',
-        subtitles: [
-            'About me',
-            'Contact information'
-        ],
-        paragraphs: [
-            'Hello, my name is Julie and I\'m a French Web Developer. I love all kind of creative activities: after having experimented drawing, doing Photoshop designs, sewing, I now express my creativity by coding.',
-            'I started my career in 2015 in the Supply Chain as a Distribution Planner for Saint Laurent Paris. Very quickly, I started learning Visual Basics in order to automatize my weekly reports on Excel. That\'s how I discovered my passion for coding. I see any coding challenge like a riddle to solve. I\'m addicted to the rewarding feeling I get when I solve a bug.',
-            'In October 2019, I started a full-time five-months-training with O\'clock and moved from Paris to Barcelona.'
+        content: [
+            {
+                id: 1,
+                subtitle: 'About me',
+                paragraphs: [
+                    {
+                        id: 1,
+                        text: 'Hello, my name is Julie and I\'m a French Web Developer. I love all kind of creative activities: after having experimented drawing, doing Photoshop designs, sewing, I now express my creativity by coding.'
+                    },
+                    {
+                        id: 2,
+                        text: 'I started my career in 2015 in the Supply Chain as a Distribution Planner for Saint Laurent Paris. Very quickly, I started learning Visual Basics in order to automatize my weekly reports on Excel. That\'s how I discovered my passion for coding. I see any coding challenge like a riddle to solve. I\'m addicted to the rewarding feeling I get when I solve a bug.'
+                    },
+                    {
+                        id: 3,
+                        text: 'In October 2019, I started a full-time five-months-training with O\'clock and moved from Paris to Barcelona.'
+                    },
+                ]
+            },
         ],
         imgLeft: contactLeft,
         imgRight: contactRight,
-        icons: [mail, phone, linkedIn, git],
-        altIcons: ['Mail icon', 'Phone icon', 'Linkedin icon', 'Git icon'], 
+        contactInfo: [
+            {
+                id: 1,
+                text: 'allixjulie@gmail.com',
+                icon: mail,
+                alt: 'Mail icon',
+            },
+            {
+                id: 2,
+                text: '+33 7 63 20 29 87',
+                icon: phone,
+                alt: 'Phone icon',
+            }
+        ],
+        contactInfoWithLink: [
+            {
+                id: 1,
+                text: 'LinkedIn',
+                icon: linkedIn,
+                alt: 'Linkedin icon',
+                href: 'https://www.linkedin.com/in/julieallix/',
+            },
+            {
+                id: 2,
+                text: 'GitHub',
+                icon: git,
+                alt: 'Git icon',
+                href: 'https://github.com/JulieAllix',
+            }
+        ]
     },
-
 ];

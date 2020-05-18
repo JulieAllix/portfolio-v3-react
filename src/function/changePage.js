@@ -24,6 +24,7 @@ export const nextSlide = (pages, current, pageNumber) => {
     ];
 
     const nextPage = pages[pageNumber];
+    console.log(nextPage);
     const currentPage = pages[current];
     const nextLeft = nextPage.querySelector('.hero .photo-left');
     const nextRight = nextPage.querySelector('.hero .photo-right');
@@ -34,10 +35,7 @@ export const nextSlide = (pages, current, pageNumber) => {
     const currentProjects = currentPage.querySelector('.projects');
     const nextProjects = nextPage.querySelector('.projects');
     const portfolio = document.querySelector('.portfolio');
-
-    console.log(nextLeft);
     
-
     const tl = gsap.timeline();
 
     if (currentProjects == null && nextProjects != null){
