@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import skillsData from 'assets/data/skillsData';
 import skillsDataWithoutLogo from 'assets/data/skillsDataWithoutLogo';
@@ -52,13 +53,13 @@ class Projects extends React.Component {
                 </div>
                 
                 {projectsData.map((project) => (
-                  <a href="#" key={project.id}>
+                  <Link to={project.slug} key={project.id}>
                     <img
                         className={project.iconClass}
                         src={project.iconImage}
                         alt={project.projectName}
                     />
-                  </a>
+                  </Link>
                   ))}
             </div>
 

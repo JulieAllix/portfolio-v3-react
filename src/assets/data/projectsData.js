@@ -76,6 +76,8 @@ export default [
         bgImage: bgGrocereaz,
         imageOne: oneGrocereaz,
         imageTwo: twoGrocereaz,
+        imageOneAlt: 'Recipe menu of Grocer\'eaz',
+        imageTwoAlt: 'A grocery list of Grocer\'eaz',
         alt: 'My end of studies project : Grocer\'eaz',
         about: 'This is my end of studies project: in a team of four students, we had to design and code a website. I was the product owner, and part of the frontend team. We used React for the front and Symfony for the back. Grocereaz displays recipes coming from an external API and enables the connected user to save his favorite recipes and to generate grocery lists from the recipes he would like to cook.',
         timing: 'We started this project in February 2020 and it lasted one month: one week of conception, two weeks of coding, one week for fixing the bugs and put the project online.',

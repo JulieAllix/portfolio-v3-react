@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Test from '../Test';
 import Home from '../Home';
@@ -6,6 +7,7 @@ import Projects from '../Projects';
 import Training from '../Training';
 import Contact from '../Contact';
 import Navbar from '../Navbar';
+import Grocereaz from '../Grocereaz';
 
 import AppStyled from './AppStyled';
 
@@ -40,16 +42,19 @@ class App extends React.Component {
   render() {
     return (
       <AppStyled>
-        <div className="portfolio">
-        {/*
-          <Test />
-        */}
-          <Home />
-          <Projects />
-          <Training />
-          <Contact />
-          <Navbar />
-        </div>
+        <Switch>
+          <Route exact path="/">
+            <div className="portfolio">
+              <Home />
+              <Projects />
+              <Training />
+              <Contact />
+              <Navbar />
+            </div>
+          </Route>
+          <Route exact path="/grocereaz" component={Grocereaz} />
+          <Redirect to="/" />
+        </Switch>
       </AppStyled>
     );
   }
