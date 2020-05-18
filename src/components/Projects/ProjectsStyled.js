@@ -280,6 +280,11 @@ const ProjectsStyled = styled.div`
             transition: .6s;
         }
 
+        .highlighted--project {
+            filter: none;
+            transform: scale(1.08);
+        }
+
     }
 
 `

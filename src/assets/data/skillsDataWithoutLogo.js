@@ -45,7 +45,7 @@ export default [
         id: 8,
         idName: 'unitTests',
         skill: 'Unit tests',
-        project: 'portfolio',
+        project: 'portfolioV2',
     },
     {
         id: 9,
