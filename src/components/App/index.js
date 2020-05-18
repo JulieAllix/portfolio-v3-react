@@ -1,13 +1,16 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-import Test from '../Test';
 import Home from '../Home';
 import Projects from '../Projects';
 import Training from '../Training';
 import Contact from '../Contact';
 import Navbar from '../Navbar';
+import StudyCards from '../StudyCards';
+import BreakFree from '../BreakFree';
 import Grocereaz from '../Grocereaz';
+import PortfolioV2 from '../PortfolioV2';
+import PortfolioV3 from '../PortfolioV3';
 
 import AppStyled from './AppStyled';
 
@@ -52,7 +55,11 @@ class App extends React.Component {
               <Navbar />
             </div>
           </Route>
+          <Route exact path="/study-cards" component={StudyCards} />
+          <Route exact path="/break-free" component={BreakFree} />
           <Route exact path="/grocereaz" component={Grocereaz} />
+          <Route exact path="/portfolio-v2" component={PortfolioV2} />
+          <Route exact path="/portfolio-v3" component={PortfolioV3} />
           <Redirect to="/" />
         </Switch>
       </AppStyled>

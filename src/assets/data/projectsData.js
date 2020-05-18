@@ -90,7 +90,7 @@ export default [
         id: 4,
         projectClass: 'portfoliov2',
         iconClass: 'project-ico',
-        slug: 'portfoliov2',
+        slug: 'portfolio-v2',
         highlightedProject: 'portfoliov2IsHighlighted',
         projectName: 'Portfolio - v2',
         projectSubtitle: 'A former version of my portfolio',
@@ -104,13 +104,13 @@ export default [
         skillsUsed: ['React / Redux', 'Styled Components', 'Responsive Design'],
         skillsDiscovered: ['Class components', 'Unit tests'],
         projectUrl: 'http://julieallix.com/',
-        gitHubUrl: 'https://github.com/JulieAllix/portfolio-react',
+        gitHubUrl: 'https://github.com/JulieAllix/portfolio-v2-react',
     },
     {
         id: 5,
         projectClass: 'portfoliov3',
         iconClass: 'project-ico-lg',
-        slug: 'portfoliov3',
+        slug: 'portfolio-v3',
         highlightedProject: 'portfoliov3IsHighlighted',
         projectName: 'Portfolio - v3',
         projectSubtitle: 'This portfolio',
@@ -124,7 +124,7 @@ export default [
         skillsUsed: ['HTML / CSS', 'JavaScript', 'Responsive Design'],
         skillsDiscovered: ['Figma', 'JavaScript animations'],
         projectUrl: 'http://julieallix.com/',
-        gitHubUrl: 'https://github.com/JulieAllix/portfolio-v3',
+        gitHubUrl: 'https://github.com/JulieAllix/portfolio-v3-react',
     },
 
 ];
