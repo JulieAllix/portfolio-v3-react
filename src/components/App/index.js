@@ -19,14 +19,6 @@ import { render } from '@testing-library/react';
 import handleRoll from 'function/handleRoll';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.test = this.test.bind(this);
-  }
-
-  test() {
-    console.log('Make it roll !');
-  }
 
   componentDidMount() {
     // Custom viewport unit
@@ -38,8 +30,6 @@ class App extends React.Component {
       let vw = window.innerWidth * 0.01;
       document.documentElement.style.setProperty('--vw', `${vw}px`);
     });
-
-    document.addEventListener('wheel', handleRoll);
   }
   
   render() {

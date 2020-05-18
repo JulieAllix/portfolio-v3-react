@@ -4,53 +4,9 @@ import $ from 'jquery';
 import NavbarStyled from './NavbarStyled';
 
 //import handleClick from 'function/handleClick';
-import { changeDots, bold, nextSlide } from 'function/changePage';
+import { changeDots, bold, throttle, nextSlide } from 'function/changePage';
 
 class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.test = this.test.bind(this);
-    /*
-    this.highlight = this.highlight.bind(this);
-    this.state = {
-      home: true,
-      projects: false,
-      training: false,
-      contact: false,
-    };
-    */
-  }
-  test() {
-    console.log('oui oui ouiii !');
-  }
-/*
-  highlight(element, bool) {
-    switch (element) {
-      case 'home':
-        this.setState({
-          home: bool,
-        });
-        break;
-      case 'projects':
-        this.setState({
-          projects: bool,
-        });
-        break;
-      case 'training':
-        this.setState({
-          training: bool,
-        });
-        break;
-      case 'contact':
-        this.setState({
-          contact: bool,
-        });
-        break;
-      default:
-        break;
-    }
-  }
-  */
 
   componentDidMount() {
     const slides = document.querySelectorAll('.slide');
@@ -61,22 +17,42 @@ class Navbar extends React.Component {
     let current = 0;
     let scrollSlide = 0;
 
+    document.addEventListener('wheel', throttle(function(event) {
+      if (event.deltaY > 0){
+        scrollSlide += 1;
+      } else {
+          scrollSlide -= 1;
+      }
+
+      if (scrollSlide > 3){
+          scrollSlide = 0;
+      }
+      if (scrollSlide < 0){
+          scrollSlide = 3;
+      }
+      
+      const dot = slides[scrollSlide];
+      changeDots(slides, dot);
+      nextSlide(pages, current, scrollSlide, slides);
+      current = scrollSlide;
+    }, 1500));
+
     slides.forEach((slide, index) => {
       slide.addEventListener('click', function(event) {
         const dot = event.currentTarget;
+        console.log(dot);
         changeDots(slides, dot);
         current = nextSlide(pages, current, index, slides);
-    });
-    slide.addEventListener('keypress', function(event) {
-      if (event.key === 'Enter') {
-        const dot = event.currentTarget;
-        changeDots(slides, dot);
-        current = nextSlide(pages, current, index, slides);
-      }
-  });
-    /*
         scrollSlide = index;
-      });*/
+    });
+      slide.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+          const dot = event.currentTarget;
+          changeDots(slides, dot);
+          current = nextSlide(pages, current, index, slides);
+          scrollSlide = index;
+        }
+      });
     });
 
     pageNames.forEach((page, index) => {
@@ -84,6 +60,7 @@ class Navbar extends React.Component {
         const page = event.currentTarget;
         bold(pageNames, page);
         current = nextSlide(pages, current, index, slides);
+        scrollSlide = index;
       });
     });
 
