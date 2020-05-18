@@ -40,6 +40,7 @@ const AppStyled = styled.div`
         align-items:center;
         justify-content: center;
         overflow: hidden;
+        margin: 2rem auto;
     }
 
     .hero img {

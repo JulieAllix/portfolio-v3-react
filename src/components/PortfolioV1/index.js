@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import ProjectDetailsStyled from '../ProjectDetailsStyled';
 
 import projectsData from 'assets/data/projectsData';
-const data = projectsData[4];
+const data = projectsData[3];
 
-class PortfolioV3 extends React.Component {
+class PortfolioV1 extends React.Component {
   render() {
     return (
       <ProjectDetailsStyled>
@@ -79,4 +79,4 @@ class PortfolioV3 extends React.Component {
   }
 }
 
-export default PortfolioV3;
+export default PortfolioV1;

@@ -13,15 +13,15 @@ import bgGrocereaz from '../img/grocereaz-lg.JPG';
 import oneGrocereaz from '../img/grocereaz-1.JPG';
 import twoGrocereaz from '../img/grocereaz-2.JPG';
 
-import iconPortfolioV2 from '../img/portfolio-v2-ico.JPG';
+import iconPortfolioV1 from '../img/portfolio-v1-ico.JPG';
+import bgPortfolioV1 from '../img/portfolio-v1-lg.JPG';
+import onePortfolioV1 from '../img/portfolio-v1-1.JPG';
+import twoPortfolioV1 from '../img/portfolio-v1-2.JPG';
+
+import iconPortfolioV2 from '../img/portfolio-v2-ico-lg.JPG';
 import bgPortfolioV2 from '../img/portfolio-v2-lg.JPG';
 import onePortfolioV2 from '../img/portfolio-v2-1.JPG';
 import twoPortfolioV2 from '../img/portfolio-v2-2.JPG';
-
-import iconPortfolioV3 from '../img/portfolio-v3-ico-lg.JPG';
-import bgPortfolioV3 from '../img/portfolio-v3-lg.JPG';
-import onePortfolioV3 from '../img/portfolio-v3-1.JPG';
-import twoPortfolioV3 from '../img/portfolio-v3-2.JPG';
 
 export default [
     {
@@ -88,43 +88,43 @@ export default [
     },
     {
         id: 4,
-        projectClass: 'portfoliov2',
+        projectClass: 'portfoliov1',
         iconClass: 'project-ico',
+        slug: 'portfolio-v1',
+        highlightedProject: 'portfolioV1IsHighlighted',
+        projectName: 'Portfolio - v1',
+        projectSubtitle: 'A former version of my portfolio',
+        iconImage: iconPortfolioV1,
+        bgImage: bgPortfolioV1,
+        imageOne: onePortfolioV1,
+        imageTwo: twoPortfolioV1,
+        alt: 'The v1 of my portfolio',
+        about: 'This is the first version of my portfolio, presenting my personal projects. A previous version developped with Lumen was created in January 2020 (the v0, not available online), but I decided to create a new version developped in React.',
+        timing: 'I worked on this project after the end of my bootcamp, in April 2020.',
+        skillsUsed: ['React / Redux', 'Styled Components', 'Responsive Design'],
+        skillsDiscovered: ['Class components', 'Unit tests'],
+        projectUrl: 'http://julieallix.com/project-portfolio-v1/',
+        gitHubUrl: 'https://github.com/JulieAllix/portfolio-v1-react',
+    },
+    {
+        id: 5,
+        projectClass: 'portfoliov2',
+        iconClass: 'project-ico-lg',
         slug: 'portfolio-v2',
         highlightedProject: 'portfolioV2IsHighlighted',
         projectName: 'Portfolio - v2',
-        projectSubtitle: 'A former version of my portfolio',
+        projectSubtitle: 'This portfolio',
         iconImage: iconPortfolioV2,
         bgImage: bgPortfolioV2,
         imageOne: onePortfolioV2,
         imageTwo: twoPortfolioV2,
         alt: 'The v2 of my portfolio',
-        about: 'This is the second version of my portfolio, presenting my personal projects. A first version developped with Lumen was created in January 2020, but I decided to create a new version developped in React.',
-        timing: 'I worked on this project after the end of my bootcamp, in April 2020.',
-        skillsUsed: ['React / Redux', 'Styled Components', 'Responsive Design'],
-        skillsDiscovered: ['Class components', 'Unit tests'],
-        projectUrl: 'http://julieallix.com/',
-        gitHubUrl: 'https://github.com/JulieAllix/portfolio-v2-react',
-    },
-    {
-        id: 5,
-        projectClass: 'portfoliov3',
-        iconClass: 'project-ico-lg',
-        slug: 'portfolio-v3',
-        highlightedProject: 'portfolioV3IsHighlighted',
-        projectName: 'Portfolio - v3',
-        projectSubtitle: 'This portfolio',
-        iconImage: iconPortfolioV3,
-        bgImage: bgPortfolioV3,
-        imageOne: onePortfolioV3,
-        imageTwo: twoPortfolioV3,
-        alt: 'The v3 of my portfolio',
-        about: 'This is the third version of my portfolio. The goal of this project was to improve the general design with the help of Figma and use JavaScript animations.',
+        about: 'This is the second version of my portfolio. The goal of this project was to improve the general design with the help of Figma and use JavaScript animations.',
         timing: 'I worked on this project on May 2020.',
         skillsUsed: ['HTML / CSS', 'JavaScript', 'Responsive Design'],
         skillsDiscovered: ['Figma', 'JavaScript animations (Gsap)'],
         projectUrl: 'http://julieallix.com/',
-        gitHubUrl: 'https://github.com/JulieAllix/portfolio-v3-react',
+        gitHubUrl: 'https://github.com/JulieAllix/portfolio-v2-react',
     },
 
 ];

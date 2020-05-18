@@ -16,8 +16,8 @@ class Projects extends React.Component {
       studyCardsIsHighlighted: false,
       breakFreeIsHighlighted: false,
       grocereazIsHighlighted: false,
-      portfoliov2IsHighlighted: false,
-      portfoliov3IsHighlighted: false,
+      portfolioV1IsHighlighted: false,
+      portfolioV2IsHighlighted: false,
     };
   }
 
@@ -43,46 +43,46 @@ class Projects extends React.Component {
         });
         break;
 
+      case 'portfolioV1':
+        this.setState({
+          portfolioV1IsHighlighted: bool,
+        });
+        break;
+
       case 'portfolioV2':
         this.setState({
           portfolioV2IsHighlighted: bool,
         });
         break;
 
-      case 'portfolioV3':
-        this.setState({
-          portfolioV3IsHighlighted: bool,
-        });
-        break;
-
-      case 'grocereaz + portfolioV2':
+      case 'grocereaz + portfolioV1':
       this.setState({
         grocereazIsHighlighted: bool,
-        portfolioV2IsHighlighted: bool,
+        portfolioV1IsHighlighted: bool,
       });
       break;
 
-      case 'grocereaz + portfolioV2 + portfolioV3':
+      case 'grocereaz + portfolioV1 + portfolioV2':
         this.setState({
           grocereazIsHighlighted: bool,
+          portfolioV1IsHighlighted: bool,
           portfolioV2IsHighlighted: bool,
-          portfolioV3IsHighlighted: bool,
         });
         break;
 
-      case 'breakFree + portfolioV3':
+      case 'breakFree + portfolioV2':
         this.setState({
           breakFreeIsHighlighted: bool,
-          portfolioV3IsHighlighted: bool,
+          portfolioV2IsHighlighted: bool,
         });
         break;
 
-      case 'studyCards + grocereaz + portfolioV2 + portfolioV3':
+      case 'studyCards + grocereaz + portfolioV1 + portfolioV2':
         this.setState({
           studyCardsIsHighlighted: bool,
           grocereazIsHighlighted: bool,
+          portfolioV1IsHighlighted: bool,
           portfolioV2IsHighlighted: bool,
-          portfolioV3IsHighlighted: bool,
         });
         break;
 
@@ -91,8 +91,8 @@ class Projects extends React.Component {
           studyCardsIsHighlighted: bool,
           breakFreeIsHighlighted: bool,
           grocereazIsHighlighted: bool,
+          portfolioV1IsHighlighted: bool,
           portfolioV2IsHighlighted: bool,
-          portfolioV3IsHighlighted: bool,
         });
         break;
         

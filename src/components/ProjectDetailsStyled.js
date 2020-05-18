@@ -80,6 +80,7 @@ const ProjectDetailsStyled = styled.div`
 
     .project-img img {
         max-width: 150px;
+        max-height: 150px;
         margin: 2rem 0.5rem;
     }
 
@@ -188,6 +189,7 @@ const ProjectDetailsStyled = styled.div`
 
         .project-img img {
             max-width: 300px;
+            max-height: 300px;
             margin: 2rem 1rem;
         }
 
@@ -213,6 +215,7 @@ const ProjectDetailsStyled = styled.div`
 
         .project-img img {
             max-width: 39%;
+            max-height: auto;
         }
     }
 
@@ -271,6 +274,7 @@ const ProjectDetailsStyled = styled.div`
 
         .project-img img {
             width: 350px;
+            max-height: 350px;
         }
 
         .btn {

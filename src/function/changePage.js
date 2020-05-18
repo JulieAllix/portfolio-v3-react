@@ -24,7 +24,6 @@ export const nextSlide = (pages, current, pageNumber, slides) => {
     ];
 
     const nextPage = pages[pageNumber];
-    console.log(nextPage);
     const currentPage = pages[current];
     const nextLeft = nextPage.querySelector('.hero .photo-left');
     const nextRight = nextPage.querySelector('.hero .photo-right');
