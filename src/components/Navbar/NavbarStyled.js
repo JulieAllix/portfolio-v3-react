@@ -93,7 +93,6 @@ const NavbarStyled = styled.div`
         }
 
         .pages h4.active {
-            font-weight: 100;
             text-decoration: none;
         }
 
