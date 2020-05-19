@@ -31,7 +31,7 @@ const theme = {
     contentSizeTablet: '1.1rem',
     contentSize: '.8rem',
 
-    textSizeMobile: '1rem',
+    textSizeMobile: '.8rem',
     textSizeTablet: '1.5rem',
     textSize: '1.2rem',
     

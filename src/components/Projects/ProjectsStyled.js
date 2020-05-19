@@ -5,6 +5,7 @@ const ProjectsStyled = styled.div`
 
     .details-projects {
         border: 2px solid white;
+        padding: 1rem;
     }
 
     .p-skills {
@@ -185,6 +186,22 @@ const ProjectsStyled = styled.div`
     }
 
     @media screen and (min-width: 1425px){
+
+        .p-skills-tactile {
+            line-height: 1.5rem;
+        }
+
+        .logo-skill {
+            height: 40px;
+        }
+
+        .logo-skill-lg {
+            width: 40px;
+        }
+
+        .skill-name {
+            font-size: ${theme.textSizeMobile}
+        }
 
         .hero-projects {
             grid-column: 3/4;

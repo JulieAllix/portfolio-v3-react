@@ -115,6 +115,10 @@ const AppStyled = styled.div`
             grid-template-columns: 5% 1fr 1fr 1fr 5%;
         }
 
+        .details-txt h1 {
+            font-size: ${theme.subtitleSizeTablet};
+        }
+
         .hero {
             height: 390px;
             align-self: center;
@@ -127,6 +131,11 @@ const AppStyled = styled.div`
     
     }
 
+    @media screen and (min-width: 1780px){
+        .details-txt h1 {
+            font-size: ${theme.titleSizeTablet};
+        }
+    }
     
 `
 
