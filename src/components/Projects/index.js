@@ -148,14 +148,19 @@ class Projects extends React.Component {
             <div className="hero-projects projects">
                 {projectsData.map((project) => (
                   <Link to={project.slug} key={project.id}>
-                    <img
-                        className={classNames({
-                          [project.iconClass]: true,
-                          'highlighted--project': this.state[project.highlightedProject],
-                        })}
-                        src={project.iconImage}
-                        alt={project.projectName}
-                    />
+                    <div className="project-img-container">
+                      <img
+                          className={classNames({
+                            [project.iconClass]: true,
+                            'highlighted--project': this.state[project.highlightedProject]
+                          })}
+                          src={project.iconImage}
+                          alt={project.projectName}
+                      />
+                      <div className={project.summaryClass}>
+                        {project.summary}
+                      </div>
+                    </div>
                   </Link>
                   ))}
             </div>

@@ -108,6 +108,11 @@ const ProjectsStyled = styled.div`
         max-width: 280px;
     }
 
+    .project-img-container {
+        position: relative;
+        z-index: 3;
+    }
+
     .project-ico {
         width: 300px;
         height: 300px;
@@ -242,6 +247,39 @@ const ProjectsStyled = styled.div`
 
         }
 
+        .summary, .summary-lg {
+            opacity: 0;
+            position: absolute;
+            z-index: 2;
+            bottom: 30%;
+            background-color: rgba(0, 0, 0, 0.25);
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            font-size: ${theme.textSize};
+            text-align: center;
+            width: 250px;
+            height: 30%;
+            padding: .8rem;
+            margin: 6px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .6s;
+        }
+
+        .summary-lg {
+            width: 510px;
+        }
+
+        .project-img-container:hover .summary, 
+        .project-img-container:hover .summary-lg {
+            opacity: 1; 
+            transform: scale(1.08);
+            transition: .6s;
+            pointer-events: none;
+        }
+
     }
 
     @media screen and (min-width: 1780px){
@@ -293,7 +331,7 @@ const ProjectsStyled = styled.div`
         }
 
         .projects img {
-            z-index: 3;
+            z-index: 1;
         }
 
         .project-ico-lg {
