@@ -21,6 +21,7 @@ class Navbar extends React.Component {
       slide.addEventListener('click', function(event) {
         const dot = event.currentTarget;
         const page = dot.previousElementSibling;
+        bold(pageNames, page);
         changeDots(slides, dot);
         current = nextSlide(pages, current, index, slides, dot, page, pageNames);
         scrollSlide = index;
@@ -29,6 +30,7 @@ class Navbar extends React.Component {
         if (event.key === 'Enter') {
           const dot = event.currentTarget;
           const page = dot.previousElementSibling;
+          bold(pageNames, page);
           changeDots(slides, dot);
           current = nextSlide(pages, current, index, slides, dot, page, pageNames);
           scrollSlide = index;
