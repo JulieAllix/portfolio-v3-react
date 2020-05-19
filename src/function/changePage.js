@@ -14,7 +14,7 @@ export const bold = (pages, name) => {
     return name.classList.add("active");
 }
 
-export const nextSlide = (pages, current, pageNumber, slides) => {
+export const nextSlide = (pages, current, pageNumber, slides, dot, page, pageNames) => {
     
     const backgrounds = [
         `radial-gradient(#4B4B4B, #0B1023)`,
@@ -35,17 +35,27 @@ export const nextSlide = (pages, current, pageNumber, slides) => {
     const nextProjects = nextPage.querySelector('.projects');
     const portfolio = document.querySelector('.portfolio');
     
+    console.log(dot);
+    console.log(current);
     const tl = gsap.timeline({
         // You cannot click on the nav buttons until the animation finishes
         onStart: function(){
             slides.forEach(slide => {
                 slide.style.pointerEvents = 'none';
-            })
+            });
+            pageNames.forEach(page => {
+                page.style.pointerEvents = 'none';
+            });
         },
         onComplete: function(){
             slides.forEach(slide => {
                 slide.style.pointerEvents = 'all';
-            })
+            });
+            pageNames.forEach(page => {
+                page.style.pointerEvents = 'all';
+            });
+            dot.style.pointerEvents = 'none';
+            page.style.pointerEvents = 'none';
         }
     });
 

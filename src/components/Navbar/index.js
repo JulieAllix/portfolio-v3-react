@@ -20,15 +20,17 @@ class Navbar extends React.Component {
     slides.forEach((slide, index) => {
       slide.addEventListener('click', function(event) {
         const dot = event.currentTarget;
+        const page = dot.previousElementSibling;
         changeDots(slides, dot);
-        current = nextSlide(pages, current, index, slides);
+        current = nextSlide(pages, current, index, slides, dot, page, pageNames);
         scrollSlide = index;
     });
       slide.addEventListener('keypress', function(event) {
         if (event.key === 'Enter') {
           const dot = event.currentTarget;
+          const page = dot.previousElementSibling;
           changeDots(slides, dot);
-          current = nextSlide(pages, current, index, slides);
+          current = nextSlide(pages, current, index, slides, dot, page, pageNames);
           scrollSlide = index;
         }
       });
@@ -40,7 +42,7 @@ class Navbar extends React.Component {
         const dot = page.nextElementSibling;
         bold(pageNames, page);
         changeDots(slides, dot);
-        current = nextSlide(pages, current, index, slides);
+        current = nextSlide(pages, current, index, slides, dot, page, pageNames);
         scrollSlide = index;
       });
     });
@@ -52,7 +54,7 @@ class Navbar extends React.Component {
       <NavbarStyled>
         <div className="pages">
             <div className="page-1">
-                <h4 className="page-name">Home</h4>
+                <h4 className="page-name active">Home</h4>
                 <svg
                     className="slide active"
                     id="home"

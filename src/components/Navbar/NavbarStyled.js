@@ -55,11 +55,13 @@ const NavbarStyled = styled.div`
 
     .pages svg.active {
         opacity: 1;
+        pointer-events: none;
     }
 
     .pages h4.active {
         font-weight: bold;
         text-decoration: underline;
+        pointer-events: none;
     }
 
     @media screen and (min-width: 760px) and (min-height: 550px){
