@@ -88,7 +88,6 @@ const NavbarStyled = styled.div`
         .pages h4 {
             padding: 30px;
             justify-self: flex-end;
-            cursor: auto;
         }
 
         .pages h4.active {

@@ -37,7 +37,9 @@ class Navbar extends React.Component {
     pageNames.forEach((page, index) => {
       page.addEventListener('click', function(event) {
         const page = event.currentTarget;
+        const dot = page.nextElementSibling;
         bold(pageNames, page);
+        changeDots(slides, dot);
         current = nextSlide(pages, current, index, slides);
         scrollSlide = index;
       });
