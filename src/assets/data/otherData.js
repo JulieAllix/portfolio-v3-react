@@ -44,7 +44,7 @@ export default [
                 paragraphs: [
                     {
                         id: 1,
-                        text: 'Two-hours challenges on a daily basis, eight peer-programming workshop days, one month of full-time project with a team ...'
+                        text: 'Two-hours challenges on a daily basis, eight peer-programming workshop days, one month of full-time project with a team...'
                     }
                 ]
             },

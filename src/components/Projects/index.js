@@ -108,7 +108,7 @@ class Projects extends React.Component {
             <div className="details-txt detail">
                 <h1>My personal projects</h1>
                 <div className="details-projects">
-                    <div className="p-skills"><p>Hover the below skills to highlight the projects on which I’ve put them into practice :</p></div>
+                    <div className="p-skills"><p>Hover the below skills to highlight the projects on which I’ve put them into practice:</p></div>
                     <p className="p-skills-tactile">Some of the skills I've put into practice in my personal projects</p>
                     <ul className="skills">
                       {skillsData.map((skill) => (
@@ -130,7 +130,7 @@ class Projects extends React.Component {
                         </li>
                       ))}
                     </ul>
-                    <p className="p-skills">And also :</p>
+                    <p className="p-skills">And also:</p>
                     <ul className="skills">
                       {skillsDataWithoutLogo.map((skill) => (
                         <li className="skill" key={skill.id}>
