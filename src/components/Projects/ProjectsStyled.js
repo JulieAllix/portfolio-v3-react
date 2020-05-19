@@ -114,14 +114,34 @@ const ProjectsStyled = styled.div`
     }
 
     .project-ico {
-        width: 300px;
+        width: 280px;
         height: 300px;
         margin: 5px;
     }
 
     .project-ico-lg {
-        width: 300px;
+        width: 280px;
         margin: 5px;
+    }
+
+    .summary, .summary-lg {
+        position: absolute;
+        z-index: 2;
+        bottom: 30%;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        font-size: ${theme.textSize};
+        text-align: center;
+        width: 280px;
+        height: 30%;
+        padding: .8rem;
+        margin: 5px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .6s;
     }
 
     .hero-projects a {
@@ -188,6 +208,16 @@ const ProjectsStyled = styled.div`
             border: 1px solid white;
         }
 
+        .summary, .summary-lg {
+            bottom: 30%;
+            width: 250px;
+            height: 30%;
+        }
+
+        .summary-lg {
+            width: 510px;
+        }
+
     }
 
     @media screen and (min-width: 1425px){
@@ -249,28 +279,9 @@ const ProjectsStyled = styled.div`
 
         .summary, .summary-lg {
             opacity: 0;
-            position: absolute;
-            z-index: 2;
             bottom: 30%;
-            background-color: rgba(0, 0, 0, 0.25);
-            color: white;
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-            font-size: ${theme.textSize};
-            text-align: center;
-            width: 250px;
-            height: 30%;
-            padding: .8rem;
-            margin: 6px;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: .6s;
         }
 
-        .summary-lg {
-            width: 510px;
-        }
 
         .project-img-container:hover .summary, 
         .project-img-container:hover .summary-lg {
