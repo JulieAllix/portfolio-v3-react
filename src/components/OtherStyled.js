@@ -7,12 +7,6 @@ const TrainingStyled = styled.div`
         grid-column: 1/2;
         align-self: center;
         margin-bottom: 2rem;
-        overflow-x: hidden;
-        height: 90%;
-    }
-
-    .details-txt::-webkit-scrollbar {
-        display: none;
     }
 
    .details-txt h1 {
@@ -111,6 +105,15 @@ const TrainingStyled = styled.div`
     }
 
     @media screen and (min-width: 1425px){
+
+        .details-txt {
+            overflow-x: hidden;
+            height: 90%;
+        }
+
+        .details-txt::-webkit-scrollbar {
+            display: none;
+        }
 
         .details-txt h1 {
             font-size: ${theme.titleSize};
