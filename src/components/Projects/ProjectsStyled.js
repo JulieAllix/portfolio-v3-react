@@ -76,19 +76,17 @@ const ProjectsStyled = styled.div`
 
     .logo-skill {
         height: 50px;
-        cursor: pointer;
     }
 
     .logo-skill-lg {
         width: 50px;
         align-self: center;
-        cursor: pointer;
     }
 
     .skill-name {
         padding: 5px 0;
         font-size: ${theme.contentSizeMobile};
-        cursor: pointer;
+        cursor: context-menu;
     }
 
     .hero-projects {
