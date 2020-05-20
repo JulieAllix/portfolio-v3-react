@@ -135,6 +135,7 @@ const ProjectDetailsStyled = styled.div`
         left: 0;
         opacity: 0;
         transition: .6s;
+        pointer-events: none;
     }
 
     .tooltip::after {
