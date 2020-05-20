@@ -83,12 +83,6 @@ export default [
                 text: 'allixjulie@gmail.com',
                 icon: mail,
                 alt: 'Mail icon',
-            },
-            {
-                id: 2,
-                text: '+33 7 63 20 29 87',
-                icon: phone,
-                alt: 'Phone icon',
             }
         ],
         contactInfoWithLink: [
