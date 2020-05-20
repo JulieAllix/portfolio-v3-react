@@ -7,6 +7,12 @@ const TrainingStyled = styled.div`
         grid-column: 1/2;
         align-self: center;
         margin-bottom: 2rem;
+        overflow-x: hidden;
+        height: 90%;
+    }
+
+    .details-txt::-webkit-scrollbar {
+        display: none;
     }
 
    .details-txt h1 {
