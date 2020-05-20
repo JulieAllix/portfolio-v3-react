@@ -50,9 +50,10 @@ const TrainingStyled = styled.div`
     }
 
     .tooltip {
-        background-color: rgb(187, 185, 185);
-        border: 1px solid rgb(187, 185, 185);
+        background-color: ${theme.linkColor};
+        border: 1px solid ${theme.linkColor};
         color: white;
+        padding: .3rem;
         font-size: 18px;
         text-align: center;
         position: absolute;
@@ -62,6 +63,18 @@ const TrainingStyled = styled.div`
         opacity: 0;
         transition: .6s;
     }
+
+    .tooltip::after {
+        content: " ";
+        position: absolute;
+        top: 35%; /* At the bottom of the tooltip */
+        left: -2.5%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color:  transparent ${theme.linkColor} transparent transparent;
+    }
+
     @media screen and (max-height: 415px){
 
         .details-txt h3 {

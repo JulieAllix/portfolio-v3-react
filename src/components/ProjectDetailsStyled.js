@@ -122,15 +122,16 @@ const ProjectDetailsStyled = styled.div`
     }
 
     .tooltip {
-        background-color: rgb(187, 185, 185);
-        border: 1px solid rgb(187, 185, 185);
+        background-color: ${theme.linkColor};
+        border: 1px solid ${theme.linkColor};
         color: white;
+        padding: .3rem 0;
         font-size: 18px;
         text-align: center;
         width: 100%;
         position: absolute;
         z-index: 1;
-        top: -1.8rem;
+        top: -2.2rem;
         left: 0;
         opacity: 0;
         transition: .6s;
@@ -144,7 +145,7 @@ const ProjectDetailsStyled = styled.div`
         margin-left: -5px;
         border-width: 5px;
         border-style: solid;
-        border-color: rgb(187, 185, 185) transparent transparent transparent;
+        border-color: ${theme.linkColor} transparent transparent transparent;
     }
 
     @media screen and (max-height: 415px){
