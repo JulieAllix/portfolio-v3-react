@@ -143,7 +143,7 @@ class Projects extends React.Component {
                       ))}
                     </ul>
                 </div>
-                <p className="p-click animate__animated animate__headShake">Click on the pictures to see the projects !</p>
+                <p className="p-click animate__animated animate__headShake">Click on the pictures to see the projects!</p>
             </div>
             <div className="hero-projects projects">
                 {projectsData.map((project) => (

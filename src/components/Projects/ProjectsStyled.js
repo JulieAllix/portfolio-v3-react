@@ -22,7 +22,7 @@ const ProjectsStyled = styled.div`
     .p-click {
         display: block;
         text-align: center;
-        padding: 1.3rem;
+        padding: 1.3rem 0;
         font-size: ${theme.contentSizeMobile};
         animation: shake-bottom 4s;
         animation-delay: 2s;
@@ -291,6 +291,7 @@ const ProjectsStyled = styled.div`
 
     }
 
+    
     @media screen and (min-width: 1780px){
         
         .details-projects {
