@@ -280,7 +280,6 @@ const ProjectsStyled = styled.div`
             bottom: 30%;
         }
 
-
         .project-img-container:hover .summary, 
         .project-img-container:hover .summary-lg {
             opacity: 1; 
@@ -352,6 +351,7 @@ const ProjectsStyled = styled.div`
         .highlighted--project {
             filter: none;
             animation: highlight 0.5s infinite alternate;
+            transition: .6s;
         }
 
         @keyframes highlight {
