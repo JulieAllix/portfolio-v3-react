@@ -106,9 +106,14 @@ const TrainingStyled = styled.div`
 
     @media screen and (min-width: 1425px){
 
+        .details-txt h1 {
+            padding-top: 0;
+        }
+
         .details-txt {
             overflow-x: hidden;
             height: 90%;
+            padding-right: 2rem;
         }
 
         .details-txt::-webkit-scrollbar {
