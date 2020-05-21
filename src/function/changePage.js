@@ -35,8 +35,6 @@ export const nextSlide = (pages, current, pageNumber, slides, dot, page, pageNam
     const nextProjects = nextPage.querySelector('.projects');
     const portfolio = document.querySelector('.portfolio');
     
-    console.log(dot);
-    console.log(current);
     const tl = gsap.timeline({
         // You cannot click on the nav buttons until the animation finishes
         onStart: function(){

@@ -20,9 +20,10 @@ class Projects extends React.Component {
       portfolioV2IsHighlighted: false,
     };
   }
-
+  
   // Changes the state to highlight the projects linked to a skill
   highlight(project, bool) {
+
     switch (project) {
 
       case 'studyCards':

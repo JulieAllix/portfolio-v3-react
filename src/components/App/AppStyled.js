@@ -10,6 +10,7 @@ const AppStyled = styled.div`
     
     a {
         color: ${theme.linkColor};
+        text-decoration: none;
     }
 
     .portfolio {
