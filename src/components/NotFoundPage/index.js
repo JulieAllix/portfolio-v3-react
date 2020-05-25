@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import errorImage from 'assets/img/pug-2.webp';
+import data from 'assets/data/404Data';
 
 import NotFoundPageStyled from './NotFoundPageStyled';
 
@@ -15,7 +15,28 @@ class NotFoundPage extends React.Component {
             <h2>This page does not exist</h2>
           </div>
           <div className="error-image">
-            <img src={errorImage} alt=""/>
+            <picture className="src photo-left">
+                <source
+                  media="(min-width: 1425px)"
+                  srcSet={data.photoSourceLg}   
+                  type="image/webp"
+                /> 
+                <source  
+                  media="(min-width: 760px)"   
+                  srcSet={data.photoSourceMd}   
+                  type="image/webp"
+                />
+                <source   
+                  srcSet={data.photoSourceSm}  
+                  type="image/webp"
+                />
+                <img   
+                  srcSet={data.photoImageAll}   
+                  src={data.photoImagelg_1xjpg}   
+                  type="image/jpeg"   
+                  alt="A sad pug"
+                />
+              </picture>
           </div>
           <div className="navbar">
             <Link to="/" >
