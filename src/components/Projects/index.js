@@ -115,11 +115,11 @@ class Projects extends React.Component {
                       {skillsData.map((skill) => (
                         <li className={skill.liClass} key={skill.id}>
                             <img
-                                className={skill.class}
-                                src={skill.logo}
-                                alt={skill.skill}
-                                onMouseOver={this.highlight.bind(this, skill.project, true)}
-                                onMouseOut={this.highlight.bind(this, skill.project, false)}
+                              className={skill.class}
+                              src={skill.logo}
+                              alt={skill.skill}
+                              onMouseOver={this.highlight.bind(this, skill.project, true)}
+                              onMouseOut={this.highlight.bind(this, skill.project, false)}
                             />
                             <span
                               className="skill-name"
@@ -150,14 +150,36 @@ class Projects extends React.Component {
                 {projectsData.map((project) => (
                   <Link to={project.slug} key={project.id}>
                     <div className="project-img-container">
-                      <img
-                          className={classNames({
+                      <div className={classNames({
                             [project.iconClass]: true,
                             'highlighted--project': this.state[project.highlightedProject]
-                          })}
-                          src={project.iconImage}
-                          alt={project.projectName}
-                      />
+                          })}>
+                        <picture>
+                          <source
+                            className="src"
+                            media="(min-width: 1425px)"
+                            srcSet={project.iconSourceLg}   
+                            type="image/webp"
+                          /> 
+                          <source 
+                            className="src" 
+                            media="(min-width: 760px)"   
+                            srcSet={project.iconSourceMd}   
+                            type="image/webp"
+                          />
+                          <source 
+                            className="src"  
+                            srcSet={project.iconSourceSm}  
+                            type="image/webp"
+                          />
+                          <img   
+                            srcSet={project.iconImageAll}   
+                            src={project.iconImagelg_1xjpg}   
+                            type="image/jpeg"   
+                            alt={project.projectName}
+                          />
+                        </picture>
+                      </div>
                       <div className={project.summaryClass}>
                         {project.summary}
                       </div>

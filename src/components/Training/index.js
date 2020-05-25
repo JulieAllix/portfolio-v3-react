@@ -5,6 +5,8 @@ import OtherStyled from '../OtherStyled';
 import otherData from 'assets/data/otherData';
 const data = otherData[0];
 const content = data.content;
+const photoLeft = data.imgLeft;
+const photoRight = data.imgRight;
 
 class Training extends React.Component {
   render() {
@@ -23,16 +25,50 @@ class Training extends React.Component {
                   ))}
             </div>
             <div className="hero rest">
-              <img
-                  className="photo-left"
-                  src={data.imgLeft}
+              <picture className="src photo-left">
+                <source
+                  media="(min-width: 1425px)"
+                  srcSet={photoLeft.photoSourceLg}   
+                  type="image/webp"
+                /> 
+                <source 
+                  media="(min-width: 760px)"   
+                  srcSet={photoLeft.photoSourceMd}   
+                  type="image/webp"
+                />
+                <source  
+                  srcSet={photoLeft.photoSourceSm}  
+                  type="image/webp"
+                />
+                <img   
+                  srcSet={photoLeft.photoImageAll}   
+                  src={photoLeft.photoImagelg_1xjpg}   
+                  type="image/jpeg"   
                   alt="A computer"
-              />
-              <img
-                  className="photo-right"
-                  src={data.imgRight}
+                />
+              </picture>
+              <picture className="src photo-right">
+                <source
+                  media="(min-width: 1425px)"
+                  srcSet={photoRight.photoSourceLg}   
+                  type="image/webp"
+                /> 
+                <source 
+                  media="(min-width: 760px)"   
+                  srcSet={photoRight.photoSourceMd}   
+                  type="image/webp"
+                />
+                <source  
+                  srcSet={photoRight.photoSourceSm}  
+                  type="image/webp"
+                />
+                <img   
+                  srcSet={photoRight.photoImageAll}   
+                  src={photoRight.photoImagelg_1xjpg}   
+                  type="image/jpeg"   
                   alt="A computer"
-              />
+                />
+              </picture>
             </div>
         </section>
       </OtherStyled>

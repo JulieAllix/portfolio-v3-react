@@ -12,11 +12,32 @@ class StudyCards extends React.Component {
       <ProjectDetailsStyled>
         <main>
           <div className="banner">
-            <img
-              className="banner-background"
-              src={data.bgImage}
-              alt={data.projectName}
-            />
+            <picture>
+              <source
+                className="banner-background"
+                media="(min-width: 1425px)"
+                srcSet={data.bgSourceLg}   
+                type="image/webp"
+              /> 
+              <source  
+                className="banner-background" 
+                media="(min-width: 760px)"   
+                srcSet={data.bgSourceMd}   
+                type="image/webp"
+              />
+              <source   
+                className="banner-background"
+                srcSet={data.bgSourceSm}  
+                type="image/webp"
+              />
+              <img   
+                className="banner-background" 
+                srcSet={data.bgImageAll}   
+                src={data.bgimagelg_1xjpg}   
+                type="image/jpeg"   
+                alt={data.projectName}
+              />
+            </picture>
             <div className="title">
               <h1>{data.projectName}</h1>
                 <h2>{data.projectSubtitle}</h2>
@@ -43,16 +64,50 @@ class StudyCards extends React.Component {
             </section>
             <section className="project-img-btn">
               <div className="project-img">
-                <img
-                  className="img"
-                  src={data.imageOne}
-                  alt={data.imageOneAlt}
-                />
-                <img
-                  className="img"
-                  src={data.imageTwo}
-                  alt={data.imageTwoAlt}
-                />
+                <picture className="img">
+                  <source
+                    media="(min-width: 1425px)"
+                    srcSet={data.im1SourceLg}   
+                    type="image/webp"
+                  /> 
+                  <source  
+                    media="(min-width: 760px)"   
+                    srcSet={data.im1SourceMd}   
+                    type="image/webp"
+                  />
+                  <source   
+                    srcSet={data.im1SourceSm}  
+                    type="image/webp"
+                  />
+                  <img   
+                    srcSet={data.im1imageAll}   
+                    src={data.im1imagelg_1xjpg}   
+                    type="image/jpeg"   
+                    alt={data.imageOneAlt}
+                  />
+                </picture>
+                <picture className="img">
+                  <source
+                    media="(min-width: 1425px)"
+                    srcSet={data.im2SourceLg}   
+                    type="image/webp"
+                  /> 
+                  <source  
+                    media="(min-width: 760px)"   
+                    srcSet={data.im2SourceMd}   
+                    type="image/webp"
+                  />
+                  <source   
+                    srcSet={data.im2SourceSm}  
+                    type="image/webp"
+                  />
+                  <img   
+                    srcSet={data.im2imageAll}   
+                    src={data.im2imagelg_1xjpg}   
+                    type="image/jpeg"   
+                    alt={data.imageOneAlt}
+                  />
+                </picture>
               </div>
               <div className="project-btn">
                 <a type="button" className="btn" href={data.projectUrl} target="_blank">

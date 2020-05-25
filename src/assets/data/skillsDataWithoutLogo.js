@@ -65,5 +65,11 @@ export default [
         skill: 'Gsap',
         project: 'portfolioV2',
     },
+    {
+        id: 12,
+        idName: 'responsiveImg',
+        skill: 'Responsive images',
+        project: 'portfolioV2',
+    },
     
   ];

@@ -111,16 +111,20 @@ const ProjectsStyled = styled.div`
         z-index: 3;
     }
 
-    .project-ico {
+    .project-ico img {
         width: 280px;
         height: 300px;
-        margin: 5px;
     }
 
-    .project-ico-lg {
+    .project-ico-lg img {
         width: 280px;
-        margin: 5px;
     }
+
+    .project-ico-lg img, .project-ico img
+    {
+        border: 1px solid white;
+    }
+    
 
     .summary, .summary-lg {
         position: absolute;
@@ -134,7 +138,7 @@ const ProjectsStyled = styled.div`
         width: 280px;
         height: 30%;
         padding: .8rem;
-        margin: 5px;
+        
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -146,7 +150,7 @@ const ProjectsStyled = styled.div`
         text-decoration: none;
     }
 
-    .project-ico:hover, .project-ico-lg:hover {
+    .project-ico img:hover, .project-ico-lg img:hover, .project-ico .src:hover, .project-ico-lg .src:hover {
         filter: none;
         transform: scale(1.08);
         transition: .6s;
@@ -154,7 +158,7 @@ const ProjectsStyled = styled.div`
     
     @media screen and (max-height: 415px){
 
-        .project-ico {
+        .project-ico img, .project-ico .src {
             margin-bottom: 5px;
         }
 
@@ -193,27 +197,31 @@ const ProjectsStyled = styled.div`
             max-width: 510px;
         }
 
-        .project-ico {
+        .project-ico img, .project-ico .src {
             width: 250px;
             height: 250px;
-            border: 1px solid white;
         }
 
-        .project-ico-lg {
+        .project-ico {
+
+            margin: 5px;
+        }
+
+        .project-ico-lg img, .project-ico-lg .src {
             width: 510px;
             height: 250px;
-            border: 5px solid green;
-            border: 1px solid white;
         }
 
         .summary, .summary-lg {
             bottom: 30%;
             width: 250px;
             height: 30%;
+            margin: 6px;
         }
 
         .summary-lg {
             width: 510px;
+            margin: 1px;
         }
 
     }
@@ -240,7 +248,6 @@ const ProjectsStyled = styled.div`
             grid-column: 3/4;
             align-self: center;
             justify-self: center;
-            margin-left: 10em;
             margin: 10rem auto auto 8rem;
             height: 70%;
         }
@@ -334,7 +341,7 @@ const ProjectsStyled = styled.div`
             margin: 10rem auto auto 10rem;
         }
         
-        .project-ico {
+        .project-ico img, .project-ico .src {
             filter: grayscale(1);
             transition: .6s;
         }
@@ -343,7 +350,7 @@ const ProjectsStyled = styled.div`
             z-index: 1;
         }
 
-        .project-ico-lg {
+        .project-ico-lg img, .project-ico-lg .src {
             filter: grayscale(1);
             transition: .6s;
         }

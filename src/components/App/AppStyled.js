@@ -44,7 +44,7 @@ const AppStyled = styled.div`
         margin: 2rem auto;
     }
 
-    .hero img {
+    .hero img, .hero .src {
         transition: transform 0.3s ease-out;
         height: 290px;
         width: auto;
@@ -85,7 +85,7 @@ const AppStyled = styled.div`
             height: 180px;
         }
 
-        .hero img {
+        .hero img, .hero .src {
             height: 180px;
         }
 
@@ -97,7 +97,7 @@ const AppStyled = styled.div`
             height: 450px;
         }
 
-        .hero img {
+        .hero img, .hero .src {
             height: 450px;
         }
 
@@ -126,7 +126,7 @@ const AppStyled = styled.div`
             grid-column: 3/4;
         }
 
-        .hero img {
+        .hero img, .hero .src {
             height: 390px;
         }
     

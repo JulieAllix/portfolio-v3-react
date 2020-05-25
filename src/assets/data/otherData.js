@@ -1,7 +1,44 @@
-import trainingLeft from '../img/computer-left-r.jpg';
-import trainingRight from '../img/computer-right-r.jpg';
-import contactLeft from '../img/photo-2-left.jpg';
-import contactRight from '../img/photo-2-right.jpg';
+import training_left_imagelg1xwebp from '../img/computer-left-r-lg_1x.webp';
+import training_left_imagelg2xwebp from '../img/computer-left-r-lg_2x.webp';
+import training_left_imagemd1xwebp from '../img/computer-left-r-md_1x.webp';
+import training_left_imagemd2xwebp from '../img/computer-left-r-md_2x.webp';
+import training_left_imagesm1xwebp from '../img/computer-left-r-sm_1x.webp';
+import training_left_imagesm2xwebp from '../img/computer-left-r-sm_2x.webp';
+import training_left_imagesm1xjpg from '../img/computer-left-r-sm_1x.jpg';
+import training_left_imagemd1xjpg from '../img/computer-left-r-md_1x.jpg';
+import training_left_imagelg1xjpg from '../img/computer-left-r-lg_1x.jpg';
+
+import training_right_imagelg1xwebp from '../img/computer-right-r-lg_1x.webp';
+import training_right_imagelg2xwebp from '../img/computer-right-r-lg_2x.webp';
+import training_right_imagemd1xwebp from '../img/computer-right-r-md_1x.webp';
+import training_right_imagemd2xwebp from '../img/computer-right-r-md_2x.webp';
+import training_right_imagesm1xwebp from '../img/computer-right-r-sm_1x.webp';
+import training_right_imagesm2xwebp from '../img/computer-right-r-sm_2x.webp';
+import training_right_imagesm1xjpg from '../img/computer-right-r-sm_1x.jpg';
+import training_right_imagemd1xjpg from '../img/computer-right-r-md_1x.jpg';
+import training_right_imagelg1xjpg from '../img/computer-right-r-lg_1x.jpg';
+
+
+import contact_left_imagelg1xwebp from '../img/photo-2-left-lg_1x.webp';
+import contact_left_imagelg2xwebp from '../img/photo-2-left-lg_2x.webp';
+import contact_left_imagemd1xwebp from '../img/photo-2-left-md_1x.webp';
+import contact_left_imagemd2xwebp from '../img/photo-2-left-md_2x.webp';
+import contact_left_imagesm1xwebp from '../img/photo-2-left-sm_1x.webp';
+import contact_left_imagesm2xwebp from '../img/photo-2-left-sm_2x.webp';
+import contact_left_imagesm1xjpg from '../img/photo-2-left-sm_1x.jpg';
+import contact_left_imagemd1xjpg from '../img/photo-2-left-md_1x.jpg';
+import contact_left_imagelg1xjpg from '../img/photo-2-left-lg_1x.jpg';
+
+import contact_right_imagelg1xwebp from '../img/photo-2-right-lg_1x.webp';
+import contact_right_imagelg2xwebp from '../img/photo-2-right-lg_2x.webp';
+import contact_right_imagemd1xwebp from '../img/photo-2-right-md_1x.webp';
+import contact_right_imagemd2xwebp from '../img/photo-2-right-md_2x.webp';
+import contact_right_imagesm1xwebp from '../img/photo-2-right-sm_1x.webp';
+import contact_right_imagesm2xwebp from '../img/photo-2-right-sm_2x.webp';
+import contact_right_imagesm1xjpg from '../img/photo-2-right-sm_1x.jpg';
+import contact_right_imagemd1xjpg from '../img/photo-2-right-md_1x.jpg';
+import contact_right_imagelg1xjpg from '../img/photo-2-right-lg_1x.jpg';
+
 
 import mail from '../img/mail.png';
 import phone from '../img/phone.png';
@@ -49,8 +86,20 @@ export default [
                 ]
             },
         ],
-        imgLeft: trainingLeft,
-        imgRight: trainingRight,
+        imgLeft: {
+            photoSourceLg: training_left_imagelg1xwebp + ' 1x,' + training_left_imagelg2xwebp + ' 2x',
+            photoSourceMd: training_left_imagemd1xwebp + ' 1x,' + training_left_imagemd2xwebp + ' 2x',
+            photoSourceSm: training_left_imagesm1xwebp + ' 1x,' + training_left_imagesm2xwebp + ' 2x',
+            photoImageAll: training_left_imagesm1xjpg + ' 760w,' + training_left_imagemd1xjpg + ' 1425w,' + training_left_imagelg1xjpg + ' 1440w',
+            photoimagelg_1xjpg: training_left_imagelg1xjpg,
+        },
+        imgRight: {
+            photoSourceLg: training_right_imagelg1xwebp + ' 1x,' + training_right_imagelg2xwebp + ' 2x',
+            photoSourceMd: training_right_imagemd1xwebp + ' 1x,' + training_right_imagemd2xwebp + ' 2x',
+            photoSourceSm: training_right_imagesm1xwebp + ' 1x,' + training_right_imagesm2xwebp + ' 2x',
+            photoImageAll: training_right_imagesm1xjpg + ' 760w,' + training_right_imagemd1xjpg + ' 1425w,' + training_right_imagelg1xjpg + ' 1440w',
+            photoimagelg_1xjpg: training_right_imagelg1xjpg,
+        }
     },
     {
         id: 2,
@@ -75,8 +124,20 @@ export default [
                 ]
             },
         ],
-        imgLeft: contactLeft,
-        imgRight: contactRight,
+        imgLeft: {
+            photoSourceLg: contact_left_imagelg1xwebp + ' 1x,' + contact_left_imagelg2xwebp + ' 2x',
+            photoSourceMd: contact_left_imagemd1xwebp + ' 1x,' + contact_left_imagemd2xwebp + ' 2x',
+            photoSourceSm: contact_left_imagesm1xwebp + ' 1x,' + contact_left_imagesm2xwebp + ' 2x',
+            photoImageAll: contact_left_imagesm1xjpg + ' 760w,' + contact_left_imagemd1xjpg + ' 1425w,' + contact_left_imagelg1xjpg + ' 1440w',
+            photoimagelg_1xjpg: contact_left_imagelg1xjpg,
+        },
+        imgRight: {
+            photoSourceLg: contact_right_imagelg1xwebp + ' 1x,' + contact_right_imagelg2xwebp + ' 2x',
+            photoSourceMd: contact_right_imagemd1xwebp + ' 1x,' + contact_right_imagemd2xwebp + ' 2x',
+            photoSourceSm: contact_right_imagesm1xwebp + ' 1x,' + contact_right_imagesm2xwebp + ' 2x',
+            photoImageAll: contact_right_imagesm1xjpg + ' 760w,' + contact_right_imagemd1xjpg + ' 1425w,' + contact_right_imagelg1xjpg + ' 1440w',
+            photoimagelg_1xjpg: contact_right_imagelg1xjpg,
+        },
         contactInfo: [
             {
                 id: 1,

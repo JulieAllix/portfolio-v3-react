@@ -78,10 +78,13 @@ const ProjectDetailsStyled = styled.div`
         justify-content: center;
     }
 
-    .project-img img {
-        max-width: 150px;
-        max-height: 150px;
+    .project-img .img {
         margin: 2rem 0.5rem;
+    }
+
+    .img img {
+        width: 150px;
+        height: 150px;
     }
 
     .project-btn {
@@ -189,10 +192,13 @@ const ProjectDetailsStyled = styled.div`
             font-size: ${theme.textSizeTablet};
         }
 
-        .project-img img {
-            max-width: 300px;
-            max-height: 300px;
+        .project-img .img {
             margin: 2rem 1rem;
+        }
+
+        .img img {
+            width: 300px;
+            height: 300px;
         }
 
         .btn {
@@ -215,9 +221,9 @@ const ProjectDetailsStyled = styled.div`
             margin: 3rem auto 2rem;
         }
 
-        .project-img img {
-            max-width: 39%;
-            max-height: auto;
+        .img img {
+            width: 500px;
+            height: 500px;
         }
     }
 
@@ -274,7 +280,7 @@ const ProjectDetailsStyled = styled.div`
             justify-content: center;
         }
 
-        .project-img img {
+        .img img {
             width: 350px;
             max-height: 350px;
         }
