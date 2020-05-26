@@ -12,6 +12,7 @@ const HomeStyled = styled.div`
         flex-direction: column;
         align-items:center;
         justify-content: center;
+        margin-top: 1rem;
     }
 
     .details h1 {
@@ -31,7 +32,7 @@ const HomeStyled = styled.div`
     @media screen and (max-height: 415px){
 
         .details {
-            margin-top: 1rem;
+            margin-top: 3rem;
         }
 
         .details h1 {

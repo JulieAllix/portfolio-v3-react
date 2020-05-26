@@ -3,6 +3,8 @@ import theme from '../../styles/theme';
 
 const ProjectsStyled = styled.div`
 
+    padding: 0 0 1rem 0;
+
     .details-projects {
         border: 2px solid white;
         padding: 1rem;
@@ -123,9 +125,9 @@ const ProjectsStyled = styled.div`
     .project-ico-lg img, .project-ico img
     {
         border: 1px solid white;
+        margin-bottom: .5rem;
     }
     
-
     .summary, .summary-lg {
         position: absolute;
         z-index: 2;
@@ -138,7 +140,6 @@ const ProjectsStyled = styled.div`
         width: 280px;
         height: 30%;
         padding: .8rem;
-        
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -202,14 +203,18 @@ const ProjectsStyled = styled.div`
             height: 250px;
         }
 
-        .project-ico {
-
+        .project-ico, .project-ico-lg {
             margin: 5px;
         }
 
         .project-ico-lg img, .project-ico-lg .src {
             width: 510px;
             height: 250px;
+        }
+
+        .project-ico-lg img, .project-ico img
+        {
+            margin-bottom: 0;
         }
 
         .summary, .summary-lg {

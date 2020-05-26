@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import theme from '../styles/theme';
 
-const TrainingStyled = styled.div`
-   
+const OtherStyled = styled.div`
+
    .details-txt {
         grid-column: 1/2;
         align-self: center;
@@ -137,4 +137,4 @@ const TrainingStyled = styled.div`
 
 `
 
-export default TrainingStyled;
+export default OtherStyled;
