@@ -7,6 +7,7 @@ import projectsData from 'assets/data/projectsData';
 const data = projectsData[1];
 
 class BreakFree extends React.Component {
+
   render() {
     return (
       <ProjectDetailsStyled>
@@ -122,7 +123,11 @@ class BreakFree extends React.Component {
                     <span>Opens in a new tab</span>
                   </div>
                 </a>
-                <Link type="button" className="btn" to="/">
+                <Link
+                  type="button"
+                  className="btn" 
+                  to="/"
+                >
                   Back to homepage
                 </Link>
               </div>

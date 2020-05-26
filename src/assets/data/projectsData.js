@@ -249,12 +249,12 @@ export default [
         timing: 'This was my first personal project. I worked on it during the very first weeks of my training (October 2019), and progressively updated it with the new knowledge I acquired.',
         skillsUsed: ['HTML / CSS', 'Flexbox'],
         skillsDiscovered: ['CSS variables', 'Theme switch'],
-        projectUrl: 'http://julieallix.com/project-study-cards/',
+        projectUrl: 'http://study-cards.julieallix.com/',
         gitHubUrl: 'https://github.com/JulieAllix/fiche-revisions-oclock',
     },
     {
         id: 2,
-        projectClass: 'StudyCards',
+        projectClass: 'BreakFree',
         iconClass: 'project-ico',
         slug: 'break-free',
         highlightedProject: 'breakFreeIsHighlighted',
@@ -292,7 +292,7 @@ export default [
         timing: 'This is my second personal project. I worked on it during the month of November 2019.',
         skillsUsed: ['JavaScript', 'Cookies', 'SQL / Databases'],
         skillsDiscovered: ['Canvas', '2D animation'],
-        projectUrl: 'http://julieallix.com/project-break-free/',
+        projectUrl: 'http://break-free.julieallix.com/',
         gitHubUrl: 'https://github.com/JulieAllix/break-free',
     },
     {
@@ -380,7 +380,7 @@ export default [
         timing: 'I worked on this project after the end of my bootcamp, in April 2020.',
         skillsUsed: ['React / Redux', 'Styled Components', 'Responsive Design'],
         skillsDiscovered: ['Class components', 'Unit tests'],
-        projectUrl: 'http://julieallix.com/project-portfolio-v1/',
+        projectUrl: 'http://portfolio-v1.julieallix.com/',
         gitHubUrl: 'https://github.com/JulieAllix/portfolio-v1-react',
     },
     {

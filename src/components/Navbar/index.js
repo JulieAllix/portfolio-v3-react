@@ -21,6 +21,8 @@ class Navbar extends React.Component {
       slide.addEventListener('click', function(event) {
         const dot = event.currentTarget;
         const page = dot.previousElementSibling;
+        console.log(dot);
+        console.log(page);
         bold(pageNames, page);
         changeDots(slides, dot);
         current = nextSlide(pages, current, index, slides, dot, page, pageNames);
