@@ -137,7 +137,8 @@ const ProjectsStyled = styled.div`
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
         font-size: ${theme.textSize};
         text-align: center;
-        width: 280px;
+        width: 279px;
+        margin-left: 1px;
         height: 30%;
         padding: .8rem;
         box-sizing: border-box;
@@ -219,14 +220,15 @@ const ProjectsStyled = styled.div`
 
         .summary, .summary-lg {
             bottom: 30%;
-            width: 250px;
+            width: 248px;
             height: 30%;
-            margin: 6px;
+            margin-left: 7px;
+
         }
 
         .summary-lg {
-            width: 510px;
-            margin: 1px;
+            width: 508px;
+            margin-left: 7px;
         }
 
     }
