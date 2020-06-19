@@ -5,6 +5,11 @@ const ProjectDetailsStyled = styled.div`
 
     color: black;
 
+    em {
+        font-weight: bold;
+        color: ${theme.linkColor}
+    }
+
     .banner {
         height: auto;
         width: 100%;

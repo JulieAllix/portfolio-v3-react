@@ -333,7 +333,7 @@ export default [
         imageOneAlt: 'Recipe menu of Grocer\'eaz',
         imageTwoAlt: 'A grocery list of Grocer\'eaz',
         alt: 'My end of studies project : Grocer\'eaz',
-        about: 'This is my end of studies project: in a team of four students, we had to design and code a website. I was the product owner, and part of the frontend team. We used React for the front and Symfony for the back. Grocereaz displays recipes coming from an external API and enables the connected user to save his favorite recipes and to generate grocery lists from the recipes he would like to cook.',
+        about: 'This is my end of studies project: in a team of four students, we had to design and code a website. I was the product owner, and part of the frontend team. We used React for the front and Symfony for the back. Grocereaz displays recipes coming from an external API and enables the connected user to save his favorite recipes and to generate grocery lists from the recipes he would like to cook. <em>This project is no longer available online for the moment because we stopped paying for the API key. We are working on a solution with a free API key.</em>',
         timing: 'We started this project in February 2020 and it lasted one month: one week of conception, two weeks of coding, one week for fixing the bugs and put the project online.',
         skillsUsed: ['React / Redux', 'Functional components', 'Axios', 'Git / Github', 'Styled Components', 'Responsive design', 'Semantic UI' ],
         skillsDiscovered: ['Agile method', 'Teamwork', 'APIs', 'Git conflicts', 'Wireframes'],

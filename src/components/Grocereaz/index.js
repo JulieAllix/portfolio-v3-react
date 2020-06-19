@@ -46,7 +46,7 @@ class Grocereaz extends React.Component {
           <div className="project">
             <section className="project-description">
               <h3>About</h3>
-                <p className="p-content">{data.about}</p>
+                <p className="p-content" dangerouslySetInnerHTML={ {__html: data.about} } />
               <h3>Timing</h3>
                 <p className="p-content">{data.timing}</p>
               <h3>Concepts / Skills used</h3>
@@ -110,12 +110,14 @@ class Grocereaz extends React.Component {
                 </picture>
               </div>
               <div className="project-btn">
+              {/*
                 <a type="button" className="btn" href={data.projectUrl} target="_blank">
                   See the project
                   <div className="tooltip">
                     <span>Opens in a new tab</span>
                   </div>
                 </a>
+                */}
                 <a type="button" className="btn" href={data.gitHubUrl} target="_blank">
                   Access to the repository
                   <div className="tooltip">
