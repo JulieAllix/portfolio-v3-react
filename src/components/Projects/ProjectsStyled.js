@@ -191,6 +191,7 @@ const ProjectsStyled = styled.div`
             flex-direction: row;
             flex-wrap: wrap;
             width: 100%;
+            min-width: 502px;
             height: 100%;
             align-items: flex-end;
         }
@@ -255,8 +256,8 @@ const ProjectsStyled = styled.div`
             grid-column: 3/4;
             align-self: center;
             justify-self: center;
-            margin: 10rem auto auto 8rem;
-            height: 70%;
+            margin: 4rem auto auto 8rem;
+            height: 80%;
         }
 
         .p-click {
@@ -345,7 +346,7 @@ const ProjectsStyled = styled.div`
         }
 
         .hero-projects {
-            margin: 10rem auto auto 10rem;
+            margin: 8.5rem auto auto 10rem;
         }
         
         .project-ico img, .project-ico .src {

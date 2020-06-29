@@ -1,4 +1,5 @@
 import react from '../img/react.png';
+import reactNative from '../img/reactNative.png';
 import js from '../img/javascript.png';
 import html from '../img/html5.png';
 import sass from '../img/sass.png';
@@ -19,6 +20,15 @@ export default [
     },
     {
         id: 2,
+        idName: 'reactNative',
+        skill: 'React Native',
+        project: 'recipeManager',
+        logo: reactNative,
+        class:'logo-skill',
+        liClass: 'skill',
+    },
+    {
+        id: 3,
         idName: 'javaScript',
         skill: 'JavaScript',
         project: 'breakFree + portfolioV2',
@@ -27,7 +37,7 @@ export default [
         liClass: 'skill',
     },
     {
-        id: 3,
+        id: 4,
         idName: 'htmlJsx',
         skill: 'HTML, JSX, CSS',
         project: 'all',
@@ -36,7 +46,7 @@ export default [
         liClass: 'skill',
     },
     {
-        id: 4,
+        id: 5,
         idName: 'sass',
         skill: 'Sass',
         project: 'studyCards',
@@ -45,7 +55,7 @@ export default [
         liClass: 'skill',
     },
     {
-        id: 5,
+        id: 6,
         idName: 'axios',
         skill: 'Axios',
         project: 'grocereaz',
@@ -54,16 +64,16 @@ export default [
         liClass: 'skill skill-lg',
     },
     {
-        id: 6,
+        id: 7,
         idName: 'redux',
         skill: 'Redux',
-        project: 'grocereaz + portfolioV1',
+        project: 'grocereaz + portfolioV1 + recipeManager',
         logo: redux,
         class:'logo-skill',
         liClass: 'skill',
     },
     {
-        id: 7,
+        id: 8,
         idName: 'sql',
         skill: 'SQL',
         project: 'breakFree',
@@ -71,14 +81,6 @@ export default [
         class:'logo-skill',
         liClass: 'skill',
     },
-    {
-        id: 8,
-        idName: 'git',
-        skill: 'Git / Github',
-        project: 'all',
-        logo: git,
-        class:'logo-skill',
-        liClass: 'skill',
-    },
+
     
   ];

@@ -11,6 +11,7 @@ import BreakFree from '../BreakFree';
 import Grocereaz from '../Grocereaz';
 import PortfolioV1 from '../PortfolioV1';
 import PortfolioV2 from '../PortfolioV2';
+import RecipeManager from '../RecipeManager';
 import NotFoundPage from '../NotFoundPage';
 
 import AppStyled from './AppStyled';
@@ -49,6 +50,7 @@ class App extends React.Component {
           <Route exact path="/grocereaz" component={Grocereaz} />
           <Route exact path="/portfolio-v1" component={PortfolioV1} />
           <Route exact path="/portfolio-v2" component={PortfolioV2} />
+          <Route exact path="/recipe-manager" component={RecipeManager} />
           <Route path="*" component={NotFoundPage} />
         </Switch>
       </AppStyled>

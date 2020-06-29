@@ -208,6 +208,49 @@ import im2PortfolioV2_imagesm1xjpg from '../img/portfolio-v2-2-sm_1x.JPG';
 import im2PortfolioV2_imagemd1xjpg from '../img/portfolio-v2-2-md_1x.JPG';
 import im2PortfolioV2_imagelg1xjpg from '../img/portfolio-v2-2-lg_1x.JPG';
 
+/* Recipe manager img */
+
+import iconRecipeManager_imagelg1xwebp from '../img/recipe-manager-ico-lg_1x.webp';
+import iconRecipeManager_imagelg2xwebp from '../img/recipe-manager-ico-lg_2x.webp';
+import iconRecipeManager_imagemd1xwebp from '../img/recipe-manager-ico-md_1x.webp';
+import iconRecipeManager_imagemd2xwebp from '../img/recipe-manager-ico-md_2x.webp';
+import iconRecipeManager_imagesm1xwebp from '../img/recipe-manager-ico-sm_1x.webp';
+import iconRecipeManager_imagesm2xwebp from '../img/recipe-manager-ico-sm_2x.webp';
+import iconRecipeManager_imagesm1xjpg from '../img/recipe-manager-ico-sm_1x.jpg';
+import iconRecipeManager_imagemd1xjpg from '../img/recipe-manager-ico-md_1x.jpg';
+import iconRecipeManager_imagelg1xjpg from '../img/recipe-manager-ico-lg_1x.jpg';
+
+import bgRecipeManager_imagelg1xwebp from '../img/recipe-manager-lg-lg_1x.webp';
+import bgRecipeManager_imagelg2xwebp from '../img/recipe-manager-lg-lg_2x.webp';
+import bgRecipeManager_imagemd1xwebp from '../img/recipe-manager-lg-md_1x.webp';
+import bgRecipeManager_imagemd2xwebp from '../img/recipe-manager-lg-md_2x.webp';
+import bgRecipeManager_imagesm1xwebp from '../img/recipe-manager-lg-sm_1x.webp';
+import bgRecipeManager_imagesm2xwebp from '../img/recipe-manager-lg-sm_2x.webp';
+import bgRecipeManager_imagesm1xjpg from '../img/recipe-manager-lg-sm_1x.jpg';
+import bgRecipeManager_imagemd1xjpg from '../img/recipe-manager-lg-md_1x.jpg';
+import bgRecipeManager_imagelg1xjpg from '../img/recipe-manager-lg-lg_1x.jpg';
+
+import im1RecipeManager_imagelg1xwebp from '../img/recipe-manager-1-lg_1x.webp';
+import im1RecipeManager_imagelg2xwebp from '../img/recipe-manager-1-lg_2x.webp';
+import im1RecipeManager_imagemd1xwebp from '../img/recipe-manager-1-md_1x.webp';
+import im1RecipeManager_imagemd2xwebp from '../img/recipe-manager-1-md_2x.webp';
+import im1RecipeManager_imagesm1xwebp from '../img/recipe-manager-1-sm_1x.webp';
+import im1RecipeManager_imagesm2xwebp from '../img/recipe-manager-1-sm_2x.webp';
+import im1RecipeManager_imagesm1xjpg from '../img/recipe-manager-1-sm_1x.jpg';
+import im1RecipeManager_imagemd1xjpg from '../img/recipe-manager-1-md_1x.jpg';
+import im1RecipeManager_imagelg1xjpg from '../img/recipe-manager-1-lg_1x.jpg';
+
+import im2RecipeManager_imagelg1xwebp from '../img/recipe-manager-2-lg_1x.webp';
+import im2RecipeManager_imagelg2xwebp from '../img/recipe-manager-2-lg_2x.webp';
+import im2RecipeManager_imagemd1xwebp from '../img/recipe-manager-2-md_1x.webp';
+import im2RecipeManager_imagemd2xwebp from '../img/recipe-manager-2-md_2x.webp';
+import im2RecipeManager_imagesm1xwebp from '../img/recipe-manager-2-sm_1x.webp';
+import im2RecipeManager_imagesm2xwebp from '../img/recipe-manager-2-sm_2x.webp';
+import im2RecipeManager_imagesm1xjpg from '../img/recipe-manager-2-sm_1x.jpg';
+import im2RecipeManager_imagemd1xjpg from '../img/recipe-manager-2-md_1x.jpg';
+import im2RecipeManager_imagelg1xjpg from '../img/recipe-manager-2-lg_1x.jpg';
+
+
 export default [
     {
         id: 1,
@@ -386,7 +429,7 @@ export default [
     {
         id: 5,
         projectClass: 'portfoliov2',
-        iconClass: 'project-ico-lg',
+        iconClass: 'project-ico',
         slug: 'portfolio-v2',
         highlightedProject: 'portfolioV2IsHighlighted',
         projectName: 'Portfolio - v2',
@@ -417,7 +460,7 @@ export default [
         im2imagelg_1xjpg: im2PortfolioV2_imagelg1xjpg,
 
         summary: 'The v2 of my portfolio',
-        summaryClass: 'summary summary-lg',
+        summaryClass: 'summary',
         alt: 'The v2 of my portfolio',
         about: 'This is the second version of my portfolio. The goal of this project was to improve the general design with the help of Figma and use JavaScript animations.',
         timing: 'I worked on this project on May 2020.',
@@ -425,6 +468,49 @@ export default [
         skillsDiscovered: ['Figma', 'JavaScript animations (Gsap)', 'Responsive images'],
         projectUrl: 'http://julieallix.com/',
         gitHubUrl: 'https://github.com/JulieAllix/portfolio-v2-react',
+    },
+    {
+        id: 6,
+        projectClass: 'recipeManager',
+        iconClass: 'project-ico',
+        slug: 'recipe-manager',
+        highlightedProject: 'recipeManagerIsHighlighted',
+        projectName: 'Recipe Manager',
+        projectSubtitle: 'My first mobile app in React Native',
+
+        iconSourceLg: iconRecipeManager_imagelg1xwebp + ' 1x,' + iconRecipeManager_imagelg2xwebp + ' 2x',
+        iconSourceMd: iconRecipeManager_imagemd1xwebp + ' 1x,' + iconRecipeManager_imagemd2xwebp + ' 2x',
+        iconSourceSm: iconRecipeManager_imagesm1xwebp + ' 1x,' + iconRecipeManager_imagesm2xwebp + ' 2x',
+        iconImageAll: iconRecipeManager_imagesm1xjpg + ' 760w,' + iconRecipeManager_imagemd1xjpg + ' 1425w,' + iconRecipeManager_imagelg1xjpg + ' 1440w',
+        iconImagelg_1xjpg: iconRecipeManager_imagelg1xjpg,
+        
+        bgSourceLg: bgRecipeManager_imagelg1xwebp + ' 1x,' + bgRecipeManager_imagelg2xwebp + ' 2x',
+        bgSourceMd: bgRecipeManager_imagemd1xwebp + ' 1x,' + bgRecipeManager_imagemd2xwebp + ' 2x',
+        bgSourceSm: bgRecipeManager_imagesm1xwebp + ' 1x,' + bgRecipeManager_imagesm2xwebp + ' 2x',
+        bgImageAll: bgRecipeManager_imagesm1xjpg + ' 760w,' + bgRecipeManager_imagemd1xjpg + ' 1425w,' + bgRecipeManager_imagelg1xjpg + ' 1440w',
+        bgimagelg_1xjpg: bgRecipeManager_imagelg1xjpg,
+
+        im1SourceLg: im1RecipeManager_imagelg1xwebp + ' 1x,' + im1RecipeManager_imagelg2xwebp + ' 2x',
+        im1SourceMd: im1RecipeManager_imagemd1xwebp + ' 1x,' + im1RecipeManager_imagemd2xwebp + ' 2x',
+        im1SourceSm: im1RecipeManager_imagesm1xwebp + ' 1x,' + im1RecipeManager_imagesm2xwebp + ' 2x',
+        im1ImageAll: im1RecipeManager_imagesm1xjpg + ' 760w,' + im1RecipeManager_imagemd1xjpg + ' 1425w,' + im1RecipeManager_imagelg1xjpg + ' 1440w',
+        im1imagelg_1xjpg: im1RecipeManager_imagelg1xjpg,
+
+        im2SourceLg: im2RecipeManager_imagelg1xwebp + ' 1x,' + im2RecipeManager_imagelg2xwebp + ' 2x',
+        im2SourceMd: im2RecipeManager_imagemd1xwebp + ' 1x,' + im2RecipeManager_imagemd2xwebp + ' 2x',
+        im2SourceSm: im2RecipeManager_imagesm1xwebp + ' 1x,' + im2RecipeManager_imagesm2xwebp + ' 2x',
+        im2ImageAll: im2RecipeManager_imagesm1xjpg + ' 760w,' + im2RecipeManager_imagemd1xjpg + ' 1425w,' + im2RecipeManager_imagelg1xjpg + ' 1440w',
+        im2imagelg_1xjpg: im2RecipeManager_imagelg1xjpg,
+
+        summary: 'A mobile app managing recipes',
+        summaryClass: 'summary',
+        alt: 'A mobile app managing recipes',
+        about: 'This is my first mobile app. I started building it as part of a tutorial on Academind to learn React Native. It\'s an app displaying recipes according to categories. The app also enables to use filters on the recipes and to add them to the favorites. I decided to develop the app further than what was done with the tutorial. I added real recipes, and I want the favorites of the users to be saved on a server.',
+        timing: 'I started working on this project on June 2020. I am still working on it.',
+        skillsUsed: ['React Native', 'Expo', 'Redux'],
+        skillsDiscovered: ['React Navigation'],
+        projectUrl: '',
+        gitHubUrl: 'https://github.com/JulieAllix/recipe-manager',
     },
 
 ];

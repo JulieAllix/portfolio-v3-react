@@ -18,6 +18,7 @@ class Projects extends React.Component {
       grocereazIsHighlighted: false,
       portfolioV1IsHighlighted: false,
       portfolioV2IsHighlighted: false,
+      recipeManagerIsHighlighted: false,
     };
   }
   
@@ -55,11 +56,25 @@ class Projects extends React.Component {
           portfolioV2IsHighlighted: bool,
         });
         break;
+      
+      case 'recipeManager':
+        this.setState({
+          recipeManagerIsHighlighted: bool,
+        });
+        break;
 
       case 'grocereaz + portfolioV1':
       this.setState({
         grocereazIsHighlighted: bool,
         portfolioV1IsHighlighted: bool,
+      });
+      break;
+
+      case 'grocereaz + portfolioV1 + recipeManager':
+      this.setState({
+        grocereazIsHighlighted: bool,
+        portfolioV1IsHighlighted: bool,
+        recipeManagerIsHighlighted: bool,
       });
       break;
 
@@ -94,6 +109,7 @@ class Projects extends React.Component {
           grocereazIsHighlighted: bool,
           portfolioV1IsHighlighted: bool,
           portfolioV2IsHighlighted: bool,
+          recipeManagerIsHighlighted: bool,
         });
         break;
         

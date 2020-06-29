@@ -71,5 +71,17 @@ export default [
         skill: 'Responsive images',
         project: 'portfolioV2',
     },
+    {
+        id: 13,
+        idName: 'git',
+        skill: 'Git / Github',
+        project: 'all',
+    },
+    {
+        id: 14,
+        idName: 'expo',
+        skill: 'Expo',
+        project: 'recipeManager',
+    },
     
   ];
