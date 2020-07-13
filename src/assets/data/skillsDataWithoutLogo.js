@@ -15,7 +15,7 @@ export default [
         id: 3,
         idName: 'responsiveDesign',
         skill: 'Responsive Design',
-        project: 'grocereaz + portfolioV1 + portfolioV2',
+        project: 'grocereaz + portfolioV1 + portfolioV2 + plantShop',
     },
     {
         id: 4,
@@ -71,17 +71,19 @@ export default [
         skill: 'Responsive images',
         project: 'portfolioV2',
     },
+    /*
     {
         id: 13,
         idName: 'git',
         skill: 'Git / Github',
         project: 'all',
     },
+    */
     {
         id: 14,
         idName: 'expo',
         skill: 'Expo',
-        project: 'recipeManager',
+        project: 'recipeManager + plantShop',
     },
     
   ];

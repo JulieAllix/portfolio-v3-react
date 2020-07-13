@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import ProjectDetailsStyled from '../ProjectDetailsStyled';
 
 import projectsData from 'assets/data/projectsData';
-const data = projectsData[3];
+const data = projectsData.find(project => project.id === 4);
 
 class PortfolioV1 extends React.Component {
   render() {

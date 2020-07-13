@@ -19,6 +19,7 @@ class Projects extends React.Component {
       portfolioV1IsHighlighted: false,
       portfolioV2IsHighlighted: false,
       recipeManagerIsHighlighted: false,
+      plantShopIsHighlighted: false,
     };
   }
   
@@ -63,6 +64,13 @@ class Projects extends React.Component {
         });
         break;
 
+      case 'recipeManager + plantShop':
+        this.setState({
+          recipeManagerIsHighlighted: bool,
+          plantShopIsHighlighted: bool,
+        });
+        break;
+
       case 'grocereaz + portfolioV1':
       this.setState({
         grocereazIsHighlighted: bool,
@@ -86,6 +94,15 @@ class Projects extends React.Component {
         });
         break;
 
+      case 'grocereaz + portfolioV1 + portfolioV2 + plantShop':
+          this.setState({
+            grocereazIsHighlighted: bool,
+            portfolioV1IsHighlighted: bool,
+            portfolioV2IsHighlighted: bool,
+            plantShopIsHighlighted: bool,
+          });
+          break;
+          
       case 'breakFree + portfolioV2':
         this.setState({
           breakFreeIsHighlighted: bool,
@@ -102,6 +119,15 @@ class Projects extends React.Component {
         });
         break;
 
+      case 'grocereaz + portfolioV1 + recipeManager + plantShop':
+        this.setState({
+          grocereazIsHighlighted: bool,
+          portfolioV1IsHighlighted: bool,
+          recipeManagerIsHighlighted: bool,
+          plantShopIsHighlighted: bool,
+        });
+        break;
+
       case 'all':
         this.setState({
           studyCardsIsHighlighted: bool,
@@ -110,6 +136,7 @@ class Projects extends React.Component {
           portfolioV1IsHighlighted: bool,
           portfolioV2IsHighlighted: bool,
           recipeManagerIsHighlighted: bool,
+          plantShopIsHighlighted: bool,
         });
         break;
         

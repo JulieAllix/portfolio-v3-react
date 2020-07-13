@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import ProjectDetailsStyled from '../ProjectDetailsStyled';
 
 import projectsData from 'assets/data/projectsData';
-const data = projectsData[5];
+const data = projectsData.find(project => project.id === 6);
 
 class RecipeManager extends React.Component {
   render() {

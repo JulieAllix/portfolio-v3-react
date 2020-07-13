@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import ProjectDetailsStyled from '../ProjectDetailsStyled';
 
 import projectsData from 'assets/data/projectsData';
-const data = projectsData.find(project => project.id === 3);
+const data = projectsData.find(project => project.id === 7);
 
-class Grocereaz extends React.Component {
+class PlantShop extends React.Component {
   render() {
     return (
       <ProjectDetailsStyled>
@@ -46,18 +46,12 @@ class Grocereaz extends React.Component {
           <div className="project">
             <section className="project-description">
               <h3>About</h3>
-                <p className="p-content" dangerouslySetInnerHTML={ {__html: data.about} } />
+                <p className="p-content">{data.about}</p>
               <h3>Timing</h3>
                 <p className="p-content">{data.timing}</p>
               <h3>Concepts / Skills used</h3>
                 <ul className="projects-skills">
                   {data.skillsUsed.map((skill) => (
-                    <li key={skill}>- {skill}</li>
-                  ))}
-                </ul>
-              <h3>New skills learned</h3>
-                <ul className="projects-skills">
-                  {data.skillsDiscovered.map((skill) => (
                     <li key={skill}>- {skill}</li>
                   ))}
                 </ul>
@@ -110,14 +104,6 @@ class Grocereaz extends React.Component {
                 </picture>
               </div>
               <div className="project-btn">
-              {/*
-                <a type="button" className="btn" href={data.projectUrl} target="_blank">
-                  See the project
-                  <div className="tooltip">
-                    <span>Opens in a new tab</span>
-                  </div>
-                </a>
-                */}
                 <a type="button" className="btn" href={data.gitHubUrl} target="_blank">
                   Access to the repository
                   <div className="tooltip">
@@ -136,4 +122,4 @@ class Grocereaz extends React.Component {
   }
 }
 
-export default Grocereaz;
+export default PlantShop;
